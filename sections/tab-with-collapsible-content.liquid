@@ -1,0 +1,1538 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-rte.css' | asset_url | stylesheet_tag }}
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+{{ 'collapsible-content.css' | asset_url | stylesheet_tag }}
+
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'template-collection.css' | asset_url }}" media="print" onload="this.media='all'">
+{% for block in section.blocks %}
+{%- if block.settings.enable_quick_add -%}
+  <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+  {% endfor %}
+   {% assign title_var_main = "1" %}
+<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'template-collection.css' | asset_url | stylesheet_tag }}</noscript>
+{% for block in section.blocks %}
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ block.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ block.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ block.settings.padding_top }}px;
+      padding-bottom: {{ block.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- liquid
+  assign products_to_display = block.settings.collection.all_products_count
+
+  if block.settings.collection.all_products_count > block.settings.products_to_show
+    assign products_to_display = block.settings.products_to_show
+    assign more_in_collection = true
+  endif
+
+  assign columns_mobile_int = block.settings.columns_mobile | plus: 0
+  assign show_mobile_slider = false
+  if block.settings.mobileInit and products_to_display > columns_mobile_int
+    assign show_mobile_slider = true
+  endif
+
+  assign show_desktop_slider = false
+  if block.settings.enable_desktop_slider and products_to_display > block.settings.desktopShow
+    assign show_desktop_slider = true
+  endif
+-%}
+{% endfor %}
+<div class="tab-with-collapsible-content-section color-{{ section.settings.color_scheme }} isolate gradient">
+  <div class="collection-tabs-sec page-width collection section-{{ section.id }}-padding{% if block.settings.full_width %} collection--full-width{% endif %}">
+    <div class="main-tab-heading-sec page-width">
+      <div class="collapsible-header">
+      {% if section.settings.extra_content != blank %}
+        {% if section.settings.make_h1 == true %}
+          <div class="my-featured-title">
+           <h1 class="h2 title center">{{ section.settings.extra_content }}</h1>
+          </div>
+          {% else %}
+            <div class="my-featured-title">
+          <h2 class="h2 title center">{{ section.settings.extra_content }}</h2>
+            </div>
+          {% endif %}
+      {% endif %}
+        {%- if section.settings.description -%}
+          <div class="collection__description center {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+            {{ section.settings.description -}}
+        </div>
+          {%- endif %}
+      </div>
+      <div class="my-main-tabs">
+ <div class="tab main_head">
+   {% for block in section.blocks %}
+        {% if block.settings.main_head != blank %}
+          {% assign title_var_main = block.settings.main_head | split: ' ' %}
+     {% assign title_var_main = title_var_main[0] %}
+          <button
+            class="tablinks-{{ title_var_main }}{% if forloop.index == 1 %} active{% endif %} h4"
+            {% if forloop.index == 1 %}
+            id="defaultOpen{{ title_var_main }}"
+              {% endif %}
+          {% comment %}
+            onclick="opennCity(event, 'Bharat-{{ title_var_main }}')"
+          {% endcomment %}
+          >
+            {{ block.settings.main_head }}
+          </button>
+        {% endif %}
+      {% endfor %}
+ </div>
+    </div>
+ </div>
+    
+    {% for block in section.blocks %}
+       {% assign title_var_main = block.settings.main_head | split: ' ' %}
+     {% assign title_var_main = title_var_main[0] %}
+       <div
+        id="Bharat-{{ title_var_main }}"
+        class="tabcontent-{{ title_var_main }} thebundlsec"
+      {% if forloop.index == 1 %}
+        style="opacity:1;visibility:visible; z-index: 1; height: inherit;"
+        {% else %}
+        style="opacity:0;visibility:hidden; z-index: -1; height: 0;"
+        {% endif %}
+      >
+    {% if block.settings.main_head != blank %}
+    {% assign title_var = block.settings.title | split: ' ' %}
+     {% assign title_var = title_var[0] %}
+     {% endif %}
+    <div class="collection__title title-wrapper title-wrapper--no-top-margin {% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+      {% comment %}
+        {%- if block.settings.title != blank -%}
+          <h2 class="title {{ block.settings.heading_size }}">{{ block.settings.title | escape }}</h2>
+        {%- endif -%}
+      {% endcomment %}
+      <div class="tab">
+        {% if block.settings.title != blank %}
+          <button
+            class="tablinks-{{ title_var }} active"
+            id="defaultOpen{{ title_var }}"
+            onclick="openCity{{ title_var }}(event, 'London-{{ title_var }}')"
+          >
+          {% comment %}
+            {{ block.settings.title }}
+          {% endcomment %}
+          01
+          </button>
+        {% endif %}
+        {% if block.settings.title_2 != blank %}
+          <button
+            class="tablinks-{{ title_var }}"
+            onclick="openCity{{ title_var }}(event, 'Paris-{{ title_var }}')"
+          >
+          {% comment %}
+            {{ block.settings.title_2 }}
+          {% endcomment %}
+          02
+          </button>
+        {% endif %}
+        {% if block.settings.title_3 != blank %}
+          <button
+            class="tablinks-{{ title_var }}"
+            onclick="openCity{{ title_var }}(event, 'India-{{ title_var }}')"
+          >
+          {% comment %}
+            {{ block.settings.title_3 }}
+          {% endcomment %}
+          03
+          </button>
+        {% endif %}
+        {% if block.settings.title_4 != blank %}
+          <button
+            class="tablinks-{{ title_var }}"
+            onclick="openCity{{ title_var }}(event, 'Usa-{{ title_var }}')"
+          >
+            {% comment %}
+            {{ block.settings.title_4 }}
+          {% endcomment %}
+          04
+          </button>
+        {% endif %}
+        {% if block.settings.title_5 != blank %}
+          <button
+            class="tablinks-{{ title_var }}"
+            onclick="openCity{{ title_var }}(event, 'Dubai-{{ title_var }}')"
+          >
+            {% comment %}
+            {{ block.settings.title_5 }}
+          {% endcomment %}
+          05
+          </button>
+        {% endif %}
+      </div>
+      {%- if block.settings.description != blank
+        or block.settings.show_description
+        and block.settings.collection.description != empty
+      -%}
+        <div class="collection__description {{ block.settings.description_style }} rte">
+          {%- if block.settings.show_description -%}
+            {{ block.settings.collection.description }}
+          {%- else -%}
+            {{ block.settings.description -}}
+          {%- endif %}
+        </div>
+      {%- endif -%}
+    </div>
+
+    {% if block.settings.heading_1 != blank %}
+      <div
+                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                <details
+                  id="Details-{{ block.id }}-{{ section.id }}-1"
+                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                    open
+                  {% endif %}
+                >
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}-1">
+                    <h3 class="accordion__title inline-richtext h4">
+                      {{ block.settings.heading_1 }}
+                    </h3>
+                    {% render 'icon-plus' %}
+                    {% render 'icon-minus' %}
+                  </summary>
+                  <div
+                    class="accordion__content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}-1"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}-1"
+                  >
+                    {{ block.settings.row_content_1 }}
+                  </div>
+                </details>
+              </div>
+    {% endif %}
+
+      {% if block.settings.heading_2 != blank %}
+      <div
+                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                <details
+                  id="Details-{{ block.id }}-{{ section.id }}-2"
+                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                    open
+                  {% endif %}
+                >
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}-2">
+                    <h3 class="accordion__title inline-richtext h4">
+                      {{ block.settings.heading_2 }}
+                    </h3>
+                    {% render 'icon-plus' %}
+                    {% render 'icon-minus' %}
+                  </summary>
+                  <div
+                    class="accordion__content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}-2"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}-2"
+                  >
+                    {{ block.settings.row_content_2 }}
+                  </div>
+                </details>
+              </div>
+    {% endif %}
+
+      {% if block.settings.heading_3 != blank %}
+      <div
+                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                <details
+                  id="Details-{{ block.id }}-{{ section.id }}-3"
+                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                    open
+                  {% endif %}
+                >
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}-3">
+                    <h3 class="accordion__title inline-richtext h4">
+                      {{ block.settings.heading_3 }}
+                    </h3>
+                    {% render 'icon-plus' %}
+                    {% render 'icon-minus' %}
+                  </summary>
+                  <div
+                    class="accordion__content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}-3"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}-3"
+                  >
+                    {{ block.settings.row_content_3 }}
+                  </div>
+                </details>
+              </div>
+    {% endif %}
+
+      {% if block.settings.heading_4 != blank %}
+      <div
+                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                <details
+                  id="Details-{{ block.id }}-{{ section.id }}-4"
+                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                    open
+                  {% endif %}
+                >
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}-4">
+                    <h3 class="accordion__title inline-richtext h4">
+                      {{ block.settings.heading_4 }}
+                    </h3>
+                    {% render 'icon-plus' %}
+                    {% render 'icon-minus' %}
+                  </summary>
+                  <div
+                    class="accordion__content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}-4"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}-4"
+                  >
+                    {{ block.settings.row_content_4 }}
+                  </div>
+                </details>
+              </div>
+    {% endif %}
+
+         {% if block.settings.heading_5 != blank %}
+      <div
+                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                <details
+                  id="Details-{{ block.id }}-{{ section.id }}-5"
+                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                    open
+                  {% endif %}
+                >
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}-5">
+                    <h3 class="accordion__title inline-richtext h4">
+                      {{ block.settings.heading_5 }}
+                    </h3>
+                    {% render 'icon-plus' %}
+                    {% render 'icon-minus' %}
+                  </summary>
+                  <div
+                    class="accordion__content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}-5"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}-5"
+                  >
+                    {{ block.settings.row_content_5 }}
+                  </div>
+                </details>
+              </div>
+    {% endif %}
+
+         {% if block.settings.heading_6 != blank %}
+      <div
+                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                <details
+                  id="Details-{{ block.id }}-{{ section.id }}-6"
+                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                    open
+                  {% endif %}
+                >
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}-6">
+                    <h3 class="accordion__title inline-richtext h4">
+                      {{ block.settings.heading_6 }}
+                    </h3>
+                    {% render 'icon-plus' %}
+                    {% render 'icon-minus' %}
+                  </summary>
+                  <div
+                    class="accordion__content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}-6"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}-6"
+                  >
+                    {{ block.settings.row_content_6 }}
+                  </div>
+                </details>
+              </div>
+    {% endif %}
+
+         {% if block.settings.heading_7 != blank %}
+      <div
+                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                <details
+                  id="Details-{{ block.id }}-{{ section.id }}-7"
+                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                    open
+                  {% endif %}
+                >
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}-7">
+                    <h3 class="accordion__title inline-richtext h4">
+                      {{ block.settings.heading_7 }}
+                    </h3>
+                   {% render 'icon-plus' %}
+                    {% render 'icon-minus' %}
+                  </summary>
+                  <div
+                    class="accordion__content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}-7"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}-7"
+                  >
+                    {{ block.settings.row_content_7 }}
+                  </div>
+                </details>
+              </div>
+    {% endif %}
+      {% if block.settings.heading_8 != blank %}
+      <div
+                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                <details
+                  id="Details-{{ block.id }}-{{ section.id }}-8"
+                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                    open
+                  {% endif %}
+                >
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}-8">
+                    <h3 class="accordion__title inline-richtext h4">
+                      {{ block.settings.heading_8 }}
+                    </h3>
+                   {% render 'icon-plus' %}
+                    {% render 'icon-minus' %}
+                  </summary>
+                  <div
+                    class="accordion__content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}-8"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}-8"
+                  >
+                    {{ block.settings.row_content_8 }}
+                  </div>
+                </details>
+              </div>
+    {% endif %}
+      {% if block.settings.heading_9 != blank %}
+      <div
+                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                <details
+                  id="Details-{{ block.id }}-{{ section.id }}-9"
+                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                    open
+                  {% endif %}
+                >
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}-9">
+                    <h3 class="accordion__title inline-richtext h4">
+                      {{ block.settings.heading_9 }}
+                    </h3>
+                   {% render 'icon-plus' %}
+                    {% render 'icon-minus' %}
+                  </summary>
+                  <div
+                    class="accordion__content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}-9"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}-9"
+                  >
+                    {{ block.settings.row_content_9 }}
+                  </div>
+                </details>
+              </div>
+    {% endif %}
+      {% if block.settings.heading_10 != blank %}
+      <div
+                class="accordion{% if section.settings.layout == 'row' %} content-container {% endif %}"
+                {{ block.shopify_attributes }}
+              >
+                <details
+                  id="Details-{{ block.id }}-{{ section.id }}-10"
+                  {% if section.settings.open_first_collapsible_row and forloop.first %}
+                    open
+                  {% endif %}
+                >
+                  <summary id="Summary-{{ block.id }}-{{ section.id }}-10">
+                    <h3 class="accordion__title inline-richtext h4">
+                      {{ block.settings.heading_10 }}
+                    </h3>
+                   {% render 'icon-plus' %}
+                    {% render 'icon-minus' %}
+                  </summary>
+                  <div
+                    class="accordion__content rte"
+                    id="CollapsibleAccordion-{{ block.id }}-{{ section.id }}-10"
+                    role="region"
+                    aria-labelledby="Summary-{{ block.id }}-{{ section.id }}-10"
+                  >
+                    {{ block.settings.row_content_10 }}
+                  </div>
+                </details>
+              </div>
+    {% endif %}
+
+    {%- if block.settings.show_view_all and more_in_collection -%}
+      <div class="center collection__view-all">
+        <a
+          href="{{ block.settings.collection.url }}"
+          class="{% if block.settings.view_all_style == 'link' %}link underlined-link{% elsif block.settings.view_all_style == 'solid' %}button{% else %}button button--secondary{% endif %}"
+          aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: block.settings.collection.title }}"
+        >
+          {{ 'sections.featured_collection.view_all' | t }}
+        </a>
+      </div>
+    {%- endif -%}
+       </div>
+
+      {% assign title_var_main = block.settings.main_head | split: ' ' %}
+     {% assign title_var_main = title_var_main[0] %}
+<style>
+    .flickity-slider .card .media {
+      /*border-radius: 20px;*/
+    }
+    .flickity-button,.flickity-button:focus,.flickity-button:hover{
+      box-shadow: 0 2px 10px #36363626 !important;
+    }
+   /* .flickity-prev-next-button.previous {
+        left: -16px!important ;
+    }
+    .flickity-prev-next-button.next {
+        right: -16px !important;
+    }*/
+    .product-grid{
+      box-shadow: unset !important;
+    }
+    .grid__item {
+        width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+        max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+        list-style-type: none;
+    }
+    button.tablinks-{{ title_var }}, button.tablinks-{{ title_var_main }} {
+      white-space: nowrap;
+      box-sizing: border-box!important;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      padding: 0;
+      overflow: visible;
+      background: none;
+      border: none;
+      border-radius: 0;
+      -webkit-appearance: button;
+      cursor: pointer;
+      font-family: var(--heading-font-family);
+      font-weight: var(--heading-font-weight);
+      font-style: var(--heading-font-style);
+      color: var(--heading-color);
+      transition: color .2s ease-in-out;
+      position: relative;
+      letter-spacing: 1.2px;
+      /* text-transform: uppercase; */
+      line-height: 1.5;
+      border: none;
+      outline: 0;
+  }
+    .collection__title .tab {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+  }
+    /* button.tablinks-{{ title_var }}:after, button.tablinks-{{ title_var_main }}:after {
+      position: relative;
+      display: block;
+      content: "";
+      bottom: 1px;
+      left: 0;
+      height: 1px;
+      width: 0;
+      background: #3f3f3f;
+      transition: width .25s ease-in-out;
+  }
+  button.tablinks-{{ title_var }}.active:after, button.tablinks-{{ title_var_main }}.active:after {
+      width: calc(100% - .2em);
+  } */
+    .tabcontent-{{ title_var }} ul.my-slider-{{ title_var }} li.grid__item, .tabcontent-{{ title_var }} ul.my-slider-{{ title_var_main }} li.grid__item {
+      padding: 0 30px;
+  }
+    .tabcontent-{{ title_var }} ul.my-slider-{{ title_var }} li.grid__item[style="width: 0px;"], .tabcontent-{{ title_var_main }} ul.my-slider-{{ title_var_main }} li.grid__item[style="width: 0px;"] {
+      opacity: 0.3;
+  }
+    .collection-tabs-sec{
+      overflow:hidden;
+    }
+  .tabcontent-{{ title_var }} ul.my-slider-{{ title_var }} button.slick-arrow::before, .tabcontent-{{ title_var_main }} ul.my-slider-{{ title_var_main }} button.slick-arrow::before  {
+    color: #3f3f3f;
+    font-family: inherit;
+    opacity: 1;
+  }
+  .tabcontent-{{ title_var }} ul.my-slider-{{ title_var }} button.slick-arrow, .tabcontent-{{ title_var_main }} ul.my-slider-{{ title_var_main }} button.slick-arrow {
+      background: #fff;
+      box-shadow: 0 2px 10px #36363626;
+      width: 40px;
+      z-index: 2;
+      height: 40px;
+      border-radius: 50px;
+      /*top: 30%;*/
+  }
+  .fade-in {
+    animation: fadeIn ease 2s;
+  }
+    .tabcontent-{{ title_var }} ul.my-slider-{{ title_var }} button.slick-prev.slick-arrow, .tabcontent-{{ title_var_main }} ul.my-slider-{{ title_var_main }} button.slick-prev.slick-arrow {
+      left: -15px;
+  }
+  .tabcontent-{{ title_var }} ul.my-slider-{{ title_var }} button.slick-next.slick-arrow, .tabcontent-{{ title_var_main }} ul.my-slider-{{ title_var_main }} button.slick-next.slick-arrow {
+      right: -15px;
+  }
+  .section-{{ section.id }}-padding .cli-sbc h2 {
+    margin-bottom: 16px;
+    padding-top: 0;
+}
+  @media screen and (min-width:767px){
+  .collection-tabs-sec .page-width {
+      padding: 0 2rem;
+  }
+  }
+
+  @media screen and (max-width:767px){
+      button.tablinks-{{ title_var }}, button.tablinks-{{ title_var_main }} {
+          /* font-size: 14px; */
+      }
+      .tabcontent-{{ title_var }} ul.my-slider-{{ title_var }} li.grid__item, .tabcontent-{{ title_var_main }} ul.my-slider-{{ title_var_main }} li.grid__item {
+          padding: 0 5px;
+      }
+      .section-{{ section.id }}-padding .page-width{
+        padding:0;
+      }
+      .price--on-sale .price-item--regular,.price .price-item {
+      font-size: 10px;
+      }
+      .price .price-item {
+          margin: 0 0rem 0 0;
+      }
+      .quick-add button.button {
+          width: 100%;
+      }
+      .product-grid .Carousel__Cell {
+          width: 46%;
+          padding: 0 6px;
+          vertical-align: top;
+          display: inline-block!important;
+      }
+      .flickity-button{display:none}
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+      /*transform: matrix(1, 0, 0, 1, 0, 400);*/
+    }
+    100% {
+      opacity:1;
+      /*transform: matrix(1, 0, 0, 1, 0, 0);*/
+    }
+  }
+  .flickity-button:disabled{display:none;}
+  .slick-prev{display:none;}
+</style>
+
+<script>
+  function openCity{{ title_var }}(evt, cityName) {
+    console.log(cityName);
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent-{{ title_var }}");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.opacity = "0";
+      tabcontent[i].style.visibility = "hidden";
+      tabcontent[i].style.zIndex = "-1";
+      tabcontent[i].style.height = "0";
+      tabcontent[i].classList.remove('fade-in');
+    }
+    tablinks = document.getElementsByClassName("tablinks-{{ title_var }}");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.opacity = "1";
+    document.getElementById(cityName).style.visibility = "visible";
+    document.getElementById(cityName).style.zIndex = "1";
+    document.getElementById(cityName).style.height = "inherit";
+    document.getElementById(cityName).classList.add('fade-in');
+    evt.currentTarget.className += " active";
+  }
+  //   $('.my-slider-{{ title_var }}').flickity({
+  //   cellAlign: 'left',
+  //   pageDots: true,
+  //   contain: true,
+  //   groupCells: true,
+  //   groupCells: 1,
+  //   freeScroll: true,
+  //   arrowShape: {
+  //     x0: 10,
+  //     x1: 60, y1: 50,
+  //     x2: 60, y2: 45,
+  //     x3: 20
+  //   }
+  // });
+
+  $('.collection-tabs-sec ul.product-grid').slick({
+  dots: true,
+  arrows: true,
+  infinite: true,
+  slidesToShow: 1,
+    slidesToScroll: 1,
+      prevArrow: '<button type="button" class="slick-prev"><img src="https://cdn.shopify.com/s/files/1/0656/1867/3899/files/image_49.png"/></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="https://cdn.shopify.com/s/files/1/0656/1867/3899/files/image_49.png"/></button>'
+});
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen{{ title_var }}").click();
+
+
+  // function opennCity(evt, cityNamee) {
+  //   console.log(cityNamee);
+  //   var j, tabcontentt, tablinkss;
+  //   tabcontentt = document.getElementsByClassName("tabcontent-{{ title_var_main }}");
+  //   for (j = 0; j < tabcontentt.length; j++) {
+  //     tabcontentt[j].style.opacity = "0";
+  //     tabcontentt[j].style.visibility = "hidden";
+  //     tabcontentt[j].style.zIndex = "-1";
+  //     tabcontentt[j].style.height = "0";
+  //     tabcontentt[j].classList.remove('fade-in');
+  //   }
+  //   tablinkss = document.getElementsByClassName("tablinks-{{ title_var_main }}");
+  //   for (j = 0; j < tablinkss.length; j++) {
+  //     tablinkss[j].className = tablinkss[j].className.replace(" active", "");
+  //   }
+  //   document.getElementById(cityNamee).style.opacity = "1";
+  //   document.getElementById(cityNamee).style.visibility = "visible";
+  //   document.getElementById(cityNamee).style.zIndex = "1";
+  //   document.getElementById(cityNamee).style.height = "inherit";
+  //   document.getElementById(cityNamee).classList.add('fade-in');
+  //   evt.currentTarget.className += " active";
+  // }
+  // Get the element with id="defaultOpen" and click on it
+ // document.getElementById("defaultOpen{{ title_var_main }}").click();
+</script>
+    
+    {% endfor %}
+  </div>
+</div>
+
+
+<script>
+  $(document).ready(function(){
+    $('.defaultopen').click();
+  });
+</script>
+<style>
+  .tab.main_head {
+    text-align: center;
+        display: flex;
+    justify-content: center;
+    gap: 0;
+}
+  div#Bharat-Budget .collection__title {
+    /* opacity:0; */
+}
+  {% if section.settings.extra_content != blank %}
+  div#Bharat-Budget .collection__title .tab:before {
+    content: '{{ section.settings.extra_content }}';
+}
+  div#Bharat-Budget .collection__title button#defaultOpenBling {
+    font-size: 0;
+    width: 0;
+}
+    {% endif %}
+  .tab.main_head button {
+    /* font-weight: 600; */
+}
+  .collection__title .tab {
+    display: flex;
+    justify-content: space-between !important;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    position: relative;
+}
+  .collection__title .tab button {
+    background: #4B4B9B;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 100px;
+    font-weight: 700;
+}
+  .collection__title .tab:before {
+    content: '';
+    position: absolute;
+    width: 99%;
+    height: 1px;
+    background: #4B4B9B;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+  .tab.main_head {
+    margin-bottom: 3rem;
+}
+  @media screen and (max-width:767px){
+    body .collection__title .tab {
+        gap: 2rem;
+        padding: 0 2rem;
+        overflow: scroll !important;
+      justify-content: flex-start !important;
+        padding-bottom: 2rem;
+    }
+    .tab.main_head {
+        gap: 0;
+        padding: 0;
+        overflow-x: scroll;
+        padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+</style>
+
+<script>
+  jQuery(document).ready(function(){
+    jQuery(document).on("click", "button.tablinks-General", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Shipping").removeClass("active");
+      $("button.tablinks-Placing").removeClass("active");
+      $("button.tablinks-XOXTOYS").removeClass("active");
+      $("button.tablinks-Order").removeClass("active");
+      jQuery("div#Bharat-General").css("opacity","1");
+      jQuery("div#Bharat-General").css("visibility","visible");
+      jQuery("div#Bharat-General").css("z-index","1");
+      jQuery("div#Bharat-General").css("height","inherit");
+      jQuery("div#Bharat-Shipping").css("opacity","0");
+      jQuery("div#Bharat-Shipping").css("visibility","hidden");
+      jQuery("div#Bharat-Shipping").css("z-index","-1");
+      jQuery("div#Bharat-Shipping").css("height","0");
+      jQuery("div#Bharat-Placing").css("opacity","0");
+      jQuery("div#Bharat-Placing").css("visibility","hidden");
+      jQuery("div#Bharat-Placing").css("z-index","-1");
+      jQuery("div#Bharat-Placing").css("height","0");
+      jQuery("div#Bharat-XOXTOYS").css("opacity","0");
+      jQuery("div#Bharat-XOXTOYS").css("visibility","hidden");
+      jQuery("div#Bharat-XOXTOYS").css("z-index","-1");
+      jQuery("div#Bharat-XOXTOYS").css("height","0");
+      jQuery("div#Bharat-Order").css("opacity","0");
+      jQuery("div#Bharat-Order").css("visibility","hidden");
+      jQuery("div#Bharat-Order").css("z-index","-1");
+      jQuery("div#Bharat-Order").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Shipping", function(){
+      $(this).addClass("active");
+      $("button.tablinks-General").removeClass("active");
+      $("button.tablinks-Placing").removeClass("active");
+      $("button.tablinks-XOXTOYS").removeClass("active");
+      $("button.tablinks-Order").removeClass("active");
+      jQuery("div#Bharat-Shipping").css("opacity","1");
+      jQuery("div#Bharat-Shipping").css("visibility","visible");
+      jQuery("div#Bharat-Shipping").css("z-index","1");
+      jQuery("div#Bharat-Shipping").css("height","inherit");
+      jQuery("div#Bharat-General").css("opacity","0");
+      jQuery("div#Bharat-General").css("visibility","hidden");
+      jQuery("div#Bharat-General").css("z-index","-1");
+      jQuery("div#Bharat-General").css("height","0");
+      jQuery("div#Bharat-Placing").css("opacity","0");
+      jQuery("div#Bharat-Placing").css("visibility","hidden");
+      jQuery("div#Bharat-Placing").css("z-index","-1");
+      jQuery("div#Bharat-Placing").css("height","0");
+      jQuery("div#Bharat-XOXTOYS").css("opacity","0");
+      jQuery("div#Bharat-XOXTOYS").css("visibility","hidden");
+      jQuery("div#Bharat-XOXTOYS").css("z-index","-1");
+      jQuery("div#Bharat-XOXTOYS").css("height","0");
+      jQuery("div#Bharat-Order").css("opacity","0");
+      jQuery("div#Bharat-Order").css("visibility","hidden");
+      jQuery("div#Bharat-Order").css("z-index","-1");
+      jQuery("div#Bharat-Order").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Placing", function(){
+      $(this).addClass("active");
+      $("button.tablinks-General").removeClass("active");
+      $("button.tablinks-Shipping").removeClass("active");
+      $("button.tablinks-XOXTOYS").removeClass("active");
+      $("button.tablinks-Order").removeClass("active");
+      jQuery("div#Bharat-Placing").css("opacity","1");
+      jQuery("div#Bharat-Placing").css("visibility","visible");
+      jQuery("div#Bharat-Placing").css("z-index","1");
+      jQuery("div#Bharat-Placing").css("height","inherit");
+      jQuery("div#Bharat-General").css("opacity","0");
+      jQuery("div#Bharat-General").css("visibility","hidden");
+      jQuery("div#Bharat-General").css("z-index","-1");
+      jQuery("div#Bharat-General").css("height","0");
+      jQuery("div#Bharat-Shipping").css("opacity","0");
+      jQuery("div#Bharat-Shipping").css("visibility","hidden");
+      jQuery("div#Bharat-Shipping").css("z-index","-1");
+      jQuery("div#Bharat-Shipping").css("height","0");
+      jQuery("div#Bharat-XOXTOYS").css("opacity","0");
+      jQuery("div#Bharat-XOXTOYS").css("visibility","hidden");
+      jQuery("div#Bharat-XOXTOYS").css("z-index","-1");
+      jQuery("div#Bharat-XOXTOYS").css("height","0");
+      jQuery("div#Bharat-Order").css("opacity","0");
+      jQuery("div#Bharat-Order").css("visibility","hidden");
+      jQuery("div#Bharat-Order").css("z-index","-1");
+      jQuery("div#Bharat-Order").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-XOXTOYS", function(){
+      $(this).addClass("active");
+      $("button.tablinks-General").removeClass("active");
+      $("button.tablinks-Shipping").removeClass("active");
+      $("button.tablinks-Placing").removeClass("active");
+      $("button.tablinks-Order").removeClass("active");
+      jQuery("div#Bharat-XOXTOYS").css("opacity","1");
+      jQuery("div#Bharat-XOXTOYS").css("visibility","visible");
+      jQuery("div#Bharat-XOXTOYS").css("z-index","1");
+      jQuery("div#Bharat-XOXTOYS").css("height","inherit");
+      jQuery("div#Bharat-General").css("opacity","0");
+      jQuery("div#Bharat-General").css("visibility","hidden");
+      jQuery("div#Bharat-General").css("z-index","-1");
+      jQuery("div#Bharat-General").css("height","0");
+      jQuery("div#Bharat-Shipping").css("opacity","0");
+      jQuery("div#Bharat-Shipping").css("visibility","hidden");
+      jQuery("div#Bharat-Shipping").css("z-index","-1");
+      jQuery("div#Bharat-Shipping").css("height","0");
+      jQuery("div#Bharat-Placing").css("opacity","0");
+      jQuery("div#Bharat-Placing").css("visibility","hidden");
+      jQuery("div#Bharat-Placing").css("z-index","-1");
+      jQuery("div#Bharat-Placing").css("height","0");
+      jQuery("div#Bharat-Order").css("opacity","0");
+      jQuery("div#Bharat-Order").css("visibility","hidden");
+      jQuery("div#Bharat-Order").css("z-index","-1");
+      jQuery("div#Bharat-Order").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Order", function(){
+      $(this).addClass("active");
+      $("button.tablinks-General").removeClass("active");
+      $("button.tablinks-Shipping").removeClass("active");
+      $("button.tablinks-Placing").removeClass("active");
+      $("button.tablinks-XOXTOYS").removeClass("active");
+      jQuery("div#Bharat-Order").css("opacity","1");
+      jQuery("div#Bharat-Order").css("visibility","visible");
+      jQuery("div#Bharat-Order").css("z-index","1");
+      jQuery("div#Bharat-Order").css("height","inherit");
+      jQuery("div#Bharat-General").css("opacity","0");
+      jQuery("div#Bharat-General").css("visibility","hidden");
+      jQuery("div#Bharat-General").css("z-index","-1");
+      jQuery("div#Bharat-General").css("height","0");
+      jQuery("div#Bharat-Shipping").css("opacity","0");
+      jQuery("div#Bharat-Shipping").css("visibility","hidden");
+      jQuery("div#Bharat-Shipping").css("z-index","-1");
+      jQuery("div#Bharat-Shipping").css("height","0");
+      jQuery("div#Bharat-Placing").css("opacity","0");
+      jQuery("div#Bharat-Placing").css("visibility","hidden");
+      jQuery("div#Bharat-Placing").css("z-index","-1");
+      jQuery("div#Bharat-Placing").css("height","0");
+      jQuery("div#Bharat-XOXTOYS").css("opacity","0");
+      jQuery("div#Bharat-XOXTOYS").css("visibility","hidden");
+      jQuery("div#Bharat-XOXTOYS").css("z-index","-1");
+      jQuery("div#Bharat-XOXTOYS").css("height","0");
+    });
+
+// french
+    jQuery(document).on("click", "button.tablinks-Renseignements", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Expédition").removeClass("active");
+      $("button.tablinks-Passer").removeClass("active");
+      $("button.tablinks-Programme").removeClass("active");
+      $("button.tablinks-Suivi").removeClass("active");
+      jQuery("div#Bharat-Renseignements").css("opacity","1");
+      jQuery("div#Bharat-Renseignements").css("visibility","visible");
+      jQuery("div#Bharat-Renseignements").css("z-index","1");
+      jQuery("div#Bharat-Renseignements").css("height","inherit");
+      jQuery("div#Bharat-Expédition").css("opacity","0");
+      jQuery("div#Bharat-Expédition").css("visibility","hidden");
+      jQuery("div#Bharat-Expédition").css("z-index","-1");
+      jQuery("div#Bharat-Expédition").css("height","0");
+      jQuery("div#Bharat-Passer").css("opacity","0");
+      jQuery("div#Bharat-Passer").css("visibility","hidden");
+      jQuery("div#Bharat-Passer").css("z-index","-1");
+      jQuery("div#Bharat-Passer").css("height","0");
+      jQuery("div#Bharat-Programme").css("opacity","0");
+      jQuery("div#Bharat-Programme").css("visibility","hidden");
+      jQuery("div#Bharat-Programme").css("z-index","-1");
+      jQuery("div#Bharat-Programme").css("height","0");
+      jQuery("div#Bharat-Suivi").css("opacity","0");
+      jQuery("div#Bharat-Suivi").css("visibility","hidden");
+      jQuery("div#Bharat-Suivi").css("z-index","-1");
+      jQuery("div#Bharat-Suivi").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Expédition", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Renseignements").removeClass("active");
+      $("button.tablinks-Passer").removeClass("active");
+      $("button.tablinks-Programme").removeClass("active");
+      $("button.tablinks-Suivi").removeClass("active");
+      jQuery("div#Bharat-Expédition").css("opacity","1");
+      jQuery("div#Bharat-Expédition").css("visibility","visible");
+      jQuery("div#Bharat-Expédition").css("z-index","1");
+      jQuery("div#Bharat-Expédition").css("height","inherit");
+      jQuery("div#Bharat-Renseignements").css("opacity","0");
+      jQuery("div#Bharat-Renseignements").css("visibility","hidden");
+      jQuery("div#Bharat-Renseignements").css("z-index","-1");
+      jQuery("div#Bharat-Renseignements").css("height","0");
+      jQuery("div#Bharat-Passer").css("opacity","0");
+      jQuery("div#Bharat-Passer").css("visibility","hidden");
+      jQuery("div#Bharat-Passer").css("z-index","-1");
+      jQuery("div#Bharat-Passer").css("height","0");
+      jQuery("div#Bharat-Programme").css("opacity","0");
+      jQuery("div#Bharat-Programme").css("visibility","hidden");
+      jQuery("div#Bharat-Programme").css("z-index","-1");
+      jQuery("div#Bharat-Programme").css("height","0");
+      jQuery("div#Bharat-Suivi").css("opacity","0");
+      jQuery("div#Bharat-Suivi").css("visibility","hidden");
+      jQuery("div#Bharat-Suivi").css("z-index","-1");
+      jQuery("div#Bharat-Suivi").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Passer", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Renseignements").removeClass("active");
+      $("button.tablinks-Expédition").removeClass("active");
+      $("button.tablinks-Programme").removeClass("active");
+      $("button.tablinks-Suivi").removeClass("active");
+      jQuery("div#Bharat-Passer").css("opacity","1");
+      jQuery("div#Bharat-Passer").css("visibility","visible");
+      jQuery("div#Bharat-Passer").css("z-index","1");
+      jQuery("div#Bharat-Passer").css("height","inherit");
+      jQuery("div#Bharat-Renseignements").css("opacity","0");
+      jQuery("div#Bharat-Renseignements").css("visibility","hidden");
+      jQuery("div#Bharat-Renseignements").css("z-index","-1");
+      jQuery("div#Bharat-Renseignements").css("height","0");
+      jQuery("div#Bharat-Expédition").css("opacity","0");
+      jQuery("div#Bharat-Expédition").css("visibility","hidden");
+      jQuery("div#Bharat-Expédition").css("z-index","-1");
+      jQuery("div#Bharat-Expédition").css("height","0");
+      jQuery("div#Bharat-Programme").css("opacity","0");
+      jQuery("div#Bharat-Programme").css("visibility","hidden");
+      jQuery("div#Bharat-Programme").css("z-index","-1");
+      jQuery("div#Bharat-Programme").css("height","0");
+      jQuery("div#Bharat-Suivi").css("opacity","0");
+      jQuery("div#Bharat-Suivi").css("visibility","hidden");
+      jQuery("div#Bharat-Suivi").css("z-index","-1");
+      jQuery("div#Bharat-Suivi").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Programme", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Renseignements").removeClass("active");
+      $("button.tablinks-Expédition").removeClass("active");
+      $("button.tablinks-Passer").removeClass("active");
+      $("button.tablinks-Suivi").removeClass("active");
+      jQuery("div#Bharat-Programme").css("opacity","1");
+      jQuery("div#Bharat-Programme").css("visibility","visible");
+      jQuery("div#Bharat-Programme").css("z-index","1");
+      jQuery("div#Bharat-Programme").css("height","inherit");
+      jQuery("div#Bharat-Renseignements").css("opacity","0");
+      jQuery("div#Bharat-Renseignements").css("visibility","hidden");
+      jQuery("div#Bharat-Renseignements").css("z-index","-1");
+      jQuery("div#Bharat-Renseignements").css("height","0");
+      jQuery("div#Bharat-Expédition").css("opacity","0");
+      jQuery("div#Bharat-Expédition").css("visibility","hidden");
+      jQuery("div#Bharat-Expédition").css("z-index","-1");
+      jQuery("div#Bharat-Expédition").css("height","0");
+      jQuery("div#Bharat-Passer").css("opacity","0");
+      jQuery("div#Bharat-Passer").css("visibility","hidden");
+      jQuery("div#Bharat-Passer").css("z-index","-1");
+      jQuery("div#Bharat-Passer").css("height","0");
+      jQuery("div#Bharat-Suivi").css("opacity","0");
+      jQuery("div#Bharat-Suivi").css("visibility","hidden");
+      jQuery("div#Bharat-Suivi").css("z-index","-1");
+      jQuery("div#Bharat-Suivi").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Suivi", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Renseignements").removeClass("active");
+      $("button.tablinks-Expédition").removeClass("active");
+      $("button.tablinks-Passer").removeClass("active");
+      $("button.tablinks-Programme").removeClass("active");
+      jQuery("div#Bharat-Suivi").css("opacity","1");
+      jQuery("div#Bharat-Suivi").css("visibility","visible");
+      jQuery("div#Bharat-Suivi").css("z-index","1");
+      jQuery("div#Bharat-Suivi").css("height","inherit");
+      jQuery("div#Bharat-Renseignements").css("opacity","0");
+      jQuery("div#Bharat-Renseignements").css("visibility","hidden");
+      jQuery("div#Bharat-Renseignements").css("z-index","-1");
+      jQuery("div#Bharat-Renseignements").css("height","0");
+      jQuery("div#Bharat-Expédition").css("opacity","0");
+      jQuery("div#Bharat-Expédition").css("visibility","hidden");
+      jQuery("div#Bharat-Expédition").css("z-index","-1");
+      jQuery("div#Bharat-Expédition").css("height","0");
+      jQuery("div#Bharat-Passer").css("opacity","0");
+      jQuery("div#Bharat-Passer").css("visibility","hidden");
+      jQuery("div#Bharat-Passer").css("z-index","-1");
+      jQuery("div#Bharat-Passer").css("height","0");
+      jQuery("div#Bharat-Programme").css("opacity","0");
+      jQuery("div#Bharat-Programme").css("visibility","hidden");
+      jQuery("div#Bharat-Programme").css("z-index","-1");
+      jQuery("div#Bharat-Programme").css("height","0");
+    });
+
+
+    // spanish
+jQuery(document).on("click", "button.tablinks-Consultas", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Envío").removeClass("active");
+      $("button.tablinks-Ordenando").removeClass("active");
+      $("button.tablinks-Programa").removeClass("active");
+      $("button.tablinks-Rastreo").removeClass("active");
+      jQuery("div#Bharat-Consultas").css("opacity","1");
+      jQuery("div#Bharat-Consultas").css("visibility","visible");
+      jQuery("div#Bharat-Consultas").css("z-index","1");
+      jQuery("div#Bharat-Consultas").css("height","inherit");
+      jQuery("div#Bharat-Envío").css("opacity","0");
+      jQuery("div#Bharat-Envío").css("visibility","hidden");
+      jQuery("div#Bharat-Envío").css("z-index","-1");
+      jQuery("div#Bharat-Envío").css("height","0");
+      jQuery("div#Bharat-Ordenando").css("opacity","0");
+      jQuery("div#Bharat-Ordenando").css("visibility","hidden");
+      jQuery("div#Bharat-Ordenando").css("z-index","-1");
+      jQuery("div#Bharat-Ordenando").css("height","0");
+      jQuery("div#Bharat-Programa").css("opacity","0");
+      jQuery("div#Bharat-Programa").css("visibility","hidden");
+      jQuery("div#Bharat-Programa").css("z-index","-1");
+      jQuery("div#Bharat-Programa").css("height","0");
+      jQuery("div#Bharat-Rastreo").css("opacity","0");
+      jQuery("div#Bharat-Rastreo").css("visibility","hidden");
+      jQuery("div#Bharat-Rastreo").css("z-index","-1");
+      jQuery("div#Bharat-Rastreo").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Envío", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Consultas").removeClass("active");
+      $("button.tablinks-Ordenando").removeClass("active");
+      $("button.tablinks-Programa").removeClass("active");
+      $("button.tablinks-Rastreo").removeClass("active");
+      jQuery("div#Bharat-Envío").css("opacity","1");
+      jQuery("div#Bharat-Envío").css("visibility","visible");
+      jQuery("div#Bharat-Envío").css("z-index","1");
+      jQuery("div#Bharat-Envío").css("height","inherit");
+      jQuery("div#Bharat-Consultas").css("opacity","0");
+      jQuery("div#Bharat-Consultas").css("visibility","hidden");
+      jQuery("div#Bharat-Consultas").css("z-index","-1");
+      jQuery("div#Bharat-Consultas").css("height","0");
+      jQuery("div#Bharat-Ordenando").css("opacity","0");
+      jQuery("div#Bharat-Ordenando").css("visibility","hidden");
+      jQuery("div#Bharat-Ordenando").css("z-index","-1");
+      jQuery("div#Bharat-Ordenando").css("height","0");
+      jQuery("div#Bharat-Programa").css("opacity","0");
+      jQuery("div#Bharat-Programa").css("visibility","hidden");
+      jQuery("div#Bharat-Programa").css("z-index","-1");
+      jQuery("div#Bharat-Programa").css("height","0");
+      jQuery("div#Bharat-Rastreo").css("opacity","0");
+      jQuery("div#Bharat-Rastreo").css("visibility","hidden");
+      jQuery("div#Bharat-Rastreo").css("z-index","-1");
+      jQuery("div#Bharat-Rastreo").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Ordenando", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Consultas").removeClass("active");
+      $("button.tablinks-Envío").removeClass("active");
+      $("button.tablinks-Programa").removeClass("active");
+      $("button.tablinks-Rastreo").removeClass("active");
+      jQuery("div#Bharat-Ordenando").css("opacity","1");
+      jQuery("div#Bharat-Ordenando").css("visibility","visible");
+      jQuery("div#Bharat-Ordenando").css("z-index","1");
+      jQuery("div#Bharat-Ordenando").css("height","inherit");
+      jQuery("div#Bharat-Consultas").css("opacity","0");
+      jQuery("div#Bharat-Consultas").css("visibility","hidden");
+      jQuery("div#Bharat-Consultas").css("z-index","-1");
+      jQuery("div#Bharat-Consultas").css("height","0");
+      jQuery("div#Bharat-Envío").css("opacity","0");
+      jQuery("div#Bharat-Envío").css("visibility","hidden");
+      jQuery("div#Bharat-Envío").css("z-index","-1");
+      jQuery("div#Bharat-Envío").css("height","0");
+      jQuery("div#Bharat-Programa").css("opacity","0");
+      jQuery("div#Bharat-Programa").css("visibility","hidden");
+      jQuery("div#Bharat-Programa").css("z-index","-1");
+      jQuery("div#Bharat-Programa").css("height","0");
+      jQuery("div#Bharat-Rastreo").css("opacity","0");
+      jQuery("div#Bharat-Rastreo").css("visibility","hidden");
+      jQuery("div#Bharat-Rastreo").css("z-index","-1");
+      jQuery("div#Bharat-Rastreo").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Programa", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Consultas").removeClass("active");
+      $("button.tablinks-Envío").removeClass("active");
+      $("button.tablinks-Ordenando").removeClass("active");
+      $("button.tablinks-Rastreo").removeClass("active");
+      jQuery("div#Bharat-Programa").css("opacity","1");
+      jQuery("div#Bharat-Programa").css("visibility","visible");
+      jQuery("div#Bharat-Programa").css("z-index","1");
+      jQuery("div#Bharat-Programa").css("height","inherit");
+      jQuery("div#Bharat-Consultas").css("opacity","0");
+      jQuery("div#Bharat-Consultas").css("visibility","hidden");
+      jQuery("div#Bharat-Consultas").css("z-index","-1");
+      jQuery("div#Bharat-Consultas").css("height","0");
+      jQuery("div#Bharat-Envío").css("opacity","0");
+      jQuery("div#Bharat-Envío").css("visibility","hidden");
+      jQuery("div#Bharat-Envío").css("z-index","-1");
+      jQuery("div#Bharat-Envío").css("height","0");
+      jQuery("div#Bharat-Ordenando").css("opacity","0");
+      jQuery("div#Bharat-Ordenando").css("visibility","hidden");
+      jQuery("div#Bharat-Ordenando").css("z-index","-1");
+      jQuery("div#Bharat-Ordenando").css("height","0");
+      jQuery("div#Bharat-Rastreo").css("opacity","0");
+      jQuery("div#Bharat-Rastreo").css("visibility","hidden");
+      jQuery("div#Bharat-Rastreo").css("z-index","-1");
+      jQuery("div#Bharat-Rastreo").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Rastreo", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Consultas").removeClass("active");
+      $("button.tablinks-Envío").removeClass("active");
+      $("button.tablinks-Ordenando").removeClass("active");
+      $("button.tablinks-Programa").removeClass("active");
+      jQuery("div#Bharat-Rastreo").css("opacity","1");
+      jQuery("div#Bharat-Rastreo").css("visibility","visible");
+      jQuery("div#Bharat-Rastreo").css("z-index","1");
+      jQuery("div#Bharat-Rastreo").css("height","inherit");
+      jQuery("div#Bharat-Consultas").css("opacity","0");
+      jQuery("div#Bharat-Consultas").css("visibility","hidden");
+      jQuery("div#Bharat-Consultas").css("z-index","-1");
+      jQuery("div#Bharat-Consultas").css("height","0");
+      jQuery("div#Bharat-Envío").css("opacity","0");
+      jQuery("div#Bharat-Envío").css("visibility","hidden");
+      jQuery("div#Bharat-Envío").css("z-index","-1");
+      jQuery("div#Bharat-Envío").css("height","0");
+      jQuery("div#Bharat-Ordenando").css("opacity","0");
+      jQuery("div#Bharat-Ordenando").css("visibility","hidden");
+      jQuery("div#Bharat-Ordenando").css("z-index","-1");
+      jQuery("div#Bharat-Ordenando").css("height","0");
+      jQuery("div#Bharat-Programa").css("opacity","0");
+      jQuery("div#Bharat-Programa").css("visibility","hidden");
+      jQuery("div#Bharat-Programa").css("z-index","-1");
+      jQuery("div#Bharat-Programa").css("height","0");
+    });
+    
+  });
+</script>
+
+
+
+<script>
+  jQuery(document).ready(function(){
+    jQuery(document).on("click", "button.tablinks-Général", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Expédition").removeClass("active");
+      $("button.tablinks-Placement").removeClass("active");
+      $("button.tablinks-Mise").removeClass("active");
+      jQuery("div#Bharat-Général").css("opacity","1");
+      jQuery("div#Bharat-Général").css("visibility","visible");
+      jQuery("div#Bharat-Général").css("z-index","1");
+      jQuery("div#Bharat-Général").css("height","inherit");
+      jQuery("div#Bharat-Expédition").css("opacity","0");
+      jQuery("div#Bharat-Expédition").css("visibility","hidden");
+      jQuery("div#Bharat-Expédition").css("z-index","-1");
+      jQuery("div#Bharat-Expédition").css("height","0");
+      jQuery("div#Bharat-Placement").css("opacity","0");
+      jQuery("div#Bharat-Placement").css("visibility","hidden");
+      jQuery("div#Bharat-Placement").css("z-index","-1");
+      jQuery("div#Bharat-Placement").css("height","0");
+      jQuery("div#Bharat-Mise").css("opacity","0");
+      jQuery("div#Bharat-Mise").css("visibility","hidden");
+      jQuery("div#Bharat-Mise").css("z-index","-1");
+      jQuery("div#Bharat-Mise").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Expédition", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Général").removeClass("active");
+      $("button.tablinks-Placement").removeClass("active");
+      $("button.tablinks-Mise").removeClass("active");
+      jQuery("div#Bharat-Expédition").css("opacity","1");
+      jQuery("div#Bharat-Expédition").css("visibility","visible");
+      jQuery("div#Bharat-Expédition").css("z-index","1");
+      jQuery("div#Bharat-Expédition").css("height","inherit");
+      jQuery("div#Bharat-Général").css("opacity","0");
+      jQuery("div#Bharat-Général").css("visibility","hidden");
+      jQuery("div#Bharat-Général").css("z-index","-1");
+      jQuery("div#Bharat-Général").css("height","0");
+      jQuery("div#Bharat-Placement").css("opacity","0");
+      jQuery("div#Bharat-Placement").css("visibility","hidden");
+      jQuery("div#Bharat-Placement").css("z-index","-1");
+      jQuery("div#Bharat-Placement").css("height","0");
+      jQuery("div#Bharat-Mise").css("opacity","0");
+      jQuery("div#Bharat-Mise").css("visibility","hidden");
+      jQuery("div#Bharat-Mise").css("z-index","-1");
+      jQuery("div#Bharat-Mise").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Placement", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Général").removeClass("active");
+      $("button.tablinks-Expédition").removeClass("active");
+      $("button.tablinks-Mise").removeClass("active");
+      jQuery("div#Bharat-Placement").css("opacity","1");
+      jQuery("div#Bharat-Placement").css("visibility","visible");
+      jQuery("div#Bharat-Placement").css("z-index","1");
+      jQuery("div#Bharat-Placement").css("height","inherit");
+      jQuery("div#Bharat-Général").css("opacity","0");
+      jQuery("div#Bharat-Général").css("visibility","hidden");
+      jQuery("div#Bharat-Général").css("z-index","-1");
+      jQuery("div#Bharat-Général").css("height","0");
+      jQuery("div#Bharat-Expédition").css("opacity","0");
+      jQuery("div#Bharat-Expédition").css("visibility","hidden");
+      jQuery("div#Bharat-Expédition").css("z-index","-1");
+      jQuery("div#Bharat-Expédition").css("height","0");
+      jQuery("div#Bharat-Mise").css("opacity","0");
+      jQuery("div#Bharat-Mise").css("visibility","hidden");
+      jQuery("div#Bharat-Mise").css("z-index","-1");
+      jQuery("div#Bharat-Mise").css("height","0");
+    });
+    jQuery(document).on("click", "button.tablinks-Mise", function(){
+      $(this).addClass("active");
+      $("button.tablinks-Général").removeClass("active");
+      $("button.tablinks-Expédition").removeClass("active");
+      $("button.tablinks-Placement").removeClass("active");
+      jQuery("div#Bharat-Mise").css("opacity","1");
+      jQuery("div#Bharat-Mise").css("visibility","visible");
+      jQuery("div#Bharat-Mise").css("z-index","1");
+      jQuery("div#Bharat-Mise").css("height","inherit");
+      jQuery("div#Bharat-Général").css("opacity","0");
+      jQuery("div#Bharat-Général").css("visibility","hidden");
+      jQuery("div#Bharat-Général").css("z-index","-1");
+      jQuery("div#Bharat-Général").css("height","0");
+      jQuery("div#Bharat-Expédition").css("opacity","0");
+      jQuery("div#Bharat-Expédition").css("visibility","hidden");
+      jQuery("div#Bharat-Expédition").css("z-index","-1");
+      jQuery("div#Bharat-Expédition").css("height","0");
+      jQuery("div#Bharat-Placement").css("opacity","0");
+      jQuery("div#Bharat-Placement").css("visibility","hidden");
+      jQuery("div#Bharat-Placement").css("z-index","-1");
+      jQuery("div#Bharat-Placement").css("height","0");
+    });
+  });
+</script>
+
+<style>
+  @media screen and (max-width:767px){
+    #shopify-section-{{ section.id }} .collection-tabs-sec ul.product-grid .flickity-slider{
+              display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+          row-gap: 20px;
+      padding-bottom: 20px;
+  }
+    #shopify-section-{{ section.id }} .collection-tabs-sec ul.product-grid .flickity-slider li.flickity-cell {
+        position: relative;
+    transform: none !important;
+}
+    #shopify-section-{{ section.id }} .collection-tabs-sec ul.product-grid .flickity-viewport {
+    height: max-content !important;
+}
+    #shopify-section-{{ section.id }} ul.product-grid li.grid__item>div.card-wrapper .card__content modal-opener {
+        display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  }
+
+{% if shop.locale == 'fr' %} 
+{% elsif shop.locale == 'es' %}
+{% else %}
+  .my-main-tabs {
+    overflow: hidden;
+    padding-bottom: 0;
+}
+{% endif %}
+  
+</style>
+{% schema %}
+{
+  "name": "Tab w Collapsible Content",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info"
+    },
+    {
+      "type": "text",
+      "id": "extra_content",
+      "label": "Main Heading"
+    },
+        {
+          "type": "checkbox",
+          "id": "make_h1",
+          "default": false,
+          "label": "Make H1 tag"
+        },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.featured-collection.settings.description.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "outertab",
+      "name": "Outer Tab",
+      "settings": [
+        {
+      "type": "text",
+      "id": "main_head",
+      "label": "Main Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading_1",
+      "default": "Collapsible row",
+      "label": "Heading 1"
+    },
+    {
+      "type": "richtext",
+      "id": "row_content_1",
+      "label": "Content 1"
+    },
+    {
+      "type": "text",
+      "id": "heading_2",
+      "default": "Collapsible row",
+      "label": "Heading 2"
+    },
+    {
+      "type": "richtext",
+      "id": "row_content_2",
+      "label": "Content 2"
+    },
+    {
+      "type": "text",
+      "id": "heading_3",
+      "default": "Collapsible row",
+      "label": "Heading 3"
+    },
+    {
+      "type": "richtext",
+      "id": "row_content_3",
+      "label": "Content 3"
+    },
+    {
+      "type": "text",
+      "id": "heading_4",
+      "default": "Collapsible row",
+      "label": "Heading 4"
+    },
+    {
+      "type": "richtext",
+      "id": "row_content_4",
+      "label": "Content 4"
+    },
+    {
+      "type": "text",
+      "id": "heading_5",
+      "default": "Collapsible row",
+      "label": "Heading 5"
+    },
+    {
+      "type": "richtext",
+      "id": "row_content_5",
+      "label": "Content 5"
+    },
+    {
+      "type": "text",
+      "id": "heading_6",
+      "default": "Collapsible row",
+      "label": "Heading 6"
+    },
+    {
+      "type": "richtext",
+      "id": "row_content_6",
+      "label": "Content 6"
+    },
+    {
+      "type": "text",
+      "id": "heading_7",
+      "default": "Collapsible row",
+      "label": "Heading 7"
+    },
+    {
+      "type": "richtext",
+      "id": "row_content_7",
+      "label": "Content 7"
+    },
+    {
+      "type": "text",
+      "id": "heading_8",
+      "default": "Collapsible row",
+      "label": "Heading 8"
+    },
+    {
+      "type": "richtext",
+      "id": "row_content_8",
+      "label": "Content 8"
+    },
+    {
+      "type": "text",
+      "id": "heading_9",
+      "default": "Collapsible row",
+      "label": "Heading 9"
+    },
+    {
+      "type": "richtext",
+      "id": "row_content_9",
+      "label": "Content 9"
+    },
+    {
+      "type": "text",
+      "id": "heading_10",
+      "default": "Collapsible row",
+      "label": "Heading 10"
+    },
+    {
+      "type": "richtext",
+      "id": "row_content_10",
+      "label": "Content 10"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tab w Collapsible Content"
+    }
+  ]
+}
+{% endschema %}
