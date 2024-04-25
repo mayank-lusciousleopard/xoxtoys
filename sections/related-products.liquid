@@ -1,7 +1,7 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'section-related-products.css' | asset_url | stylesheet_tag }}
-
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {% if section.settings.image_shape == 'blob' %}
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
@@ -20,20 +20,30 @@
   }
 {%- endstyle -%}
 
+
+
 <div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
   <product-recommendations
     class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}"
   >
     {% if recommendations.performed and recommendations.products_count > 0 %}
-      <h2 class="related-products__heading inline-richtext {{ section.settings.heading_size }}">
+      <div class="my-featured-title">
+      <h2 class="related-products__heading title inline-richtext {{ section.settings.heading_size }}">
         {{ section.settings.heading }}
       </h2>
+      </div>
+    {% if section.settings.description != blank %}
+        <div class="rte center">
+        {{ section.settings.description }}
+        </div>
+        {% endif %}
       <ul
         class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down"
         role="list"
       >
         {% for recommendation in recommendations.products %}
+          {% unless recommendation.variants.first.id == 40237389348942 or recommendation.variants.first.id == 40237389578318 or recommendation.variants.first.id == 40237389643854 %}
           <li class="grid__item">
             {% render 'card-product',
               card_product: recommendation,
@@ -41,9 +51,13 @@
               image_shape: section.settings.image_shape,
               show_secondary_image: section.settings.show_secondary_image,
               show_vendor: section.settings.show_vendor,
-              show_rating: section.settings.show_rating
+              show_rating: section.settings.show_rating,
+              show_quick_add: section.settings.enable_quick_add,
+              section_id: section.id,
+              section.settings.button_style_secondary: section.settings.button_style_secondary
             %}
           </li>
+            {% endunless %}
         {% endfor %}
       </ul>
     {% endif %}
@@ -52,6 +66,95 @@
     {% render 'mask-arch' %}
   {%- endif -%}
 </div>
+
+
+{% comment %}
+<script>
+  $(document).ready(function() {
+    var windowWidth = $(window).width();
+if(windowWidth<768){
+    $("product-recommendations").css("opacity", 0);
+    setTimeout(function(){
+      $("product-recommendations").css("opacity", 1);
+  var $slider = $('product-recommendations ul.product-grid');
+  
+  $slider.slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    speed: 400,
+    nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><g clip-path="url(#clip0_29_40)"><path d="M8 22H32.34L21.17 10.83L24 8L40 24L24 40L21.17 37.17L32.34 26H8V22Z" fill="black"/></g><defs><clipPath id="clip0_29_40"><rect width="48" height="48" fill="white" transform="matrix(-1 0 0 1 48 0)"/></clipPath></defs></svg></button>',
+  prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><g clip-path="url(#clip0_29_37)"><path d="M40 22H15.66L26.83 10.83L24 8L8 24L24 40L26.83 37.17L15.66 26H40V22Z" fill="black"/></g><defs><clipPath id="clip0_29_37"><rect width="48" height="48" fill="white"/></clipPath></defs></svg></button>',
+    arrows: false,
+    dots: false,
+  adaptiveHeight: false
+  }); 
+  }, 3000);
+setTimeout(function(){
+  $("product-recommendations").css("opacity", 1);
+  var $slider = $('product-recommendations ul.product-grid');
+  $slider.slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    speed: 400,
+    nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><g clip-path="url(#clip0_29_40)"><path d="M8 22H32.34L21.17 10.83L24 8L40 24L24 40L21.17 37.17L32.34 26H8V22Z" fill="black"/></g><defs><clipPath id="clip0_29_40"><rect width="48" height="48" fill="white" transform="matrix(-1 0 0 1 48 0)"/></clipPath></defs></svg></button>',
+  prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><g clip-path="url(#clip0_29_37)"><path d="M40 22H15.66L26.83 10.83L24 8L8 24L24 40L26.83 37.17L15.66 26H40V22Z" fill="black"/></g><defs><clipPath id="clip0_29_37"><rect width="48" height="48" fill="white"/></clipPath></defs></svg></button>',
+    arrows: false,
+    dots: false,
+  adaptiveHeight: false
+  }); 
+  }, 5000);
+}
+});
+
+</script>
+
+{% endcomment %}
+
+<script>
+  var iii = 0;
+   $(".related-products").css("opacity", 0);
+  $(".related-products").css("visibility", "hidden");
+  jQuery('.related-products').on("DOMSubtreeModified",function(){
+    if(iii === 0){
+      setTimeout(function(){
+  $(".related-products").css("opacity", 1);
+        $(".related-products").css("visibility", "visible");
+  var $slider = $('.related-products ul.product-grid');
+  $slider.slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 400,
+    nextArrow: '<button type="button" class="slick-next"><svg class="my-slick-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg></button>',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="my-slick-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg></button>',
+    arrows: true,
+    dots: false,
+  adaptiveHeight: true,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2
+      }
+    }
+  ]
+  });
+  }, 500);
+  
+    }
+  });
+</script>
 
 {% schema %}
 {
@@ -88,6 +191,17 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "button_style_secondary",
+      "label": "t:sections.slideshow.blocks.slide.settings.secondary_style.label",
+      "default": false
     },
     {
       "type": "range",
@@ -199,6 +313,12 @@
       "info": "t:sections.related-products.settings.show_rating.info"
     },
     {
+      "type": "checkbox",
+      "id": "enable_quick_add",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.enable_quick_buy.label"
+    },
+    {
       "type": "header",
       "content": "t:sections.related-products.settings.header_mobile.content"
     },
@@ -217,6 +337,12 @@
           "label": "t:sections.related-products.settings.columns_mobile.options__2.label"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "swipe_on_mobile",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.swipe_on_mobile.label"
     },
     {
       "type": "header",
