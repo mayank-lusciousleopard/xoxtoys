@@ -1,0 +1,86 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_MrT9rJ": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_6ihWKq": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Mix & Match",
+            "heading_size": "h1"
+          }
+        },
+        "text_QEU474": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Les prix sont dégressifs.<br\/>Plus vous achetez, plus vous économisez !<\/p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_XprkwU": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Start Creating",
+            "button_link_1": "\/pages\/mix-match\/#shopify-section-template--15528716697678__1708242806a81d1730",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6ihWKq",
+        "text_QEU474",
+        "buttons_XprkwU"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/mix_and_match_xox_desktop.png",
+        "mobile_image": "shopify:\/\/shop_images\/mix_match_xox_mobile_2.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-919eb1fe-4118-47a8-b692-316388bfa490",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1710832959586c0f9e": {
+      "type": "apps",
+      "blocks": {
+        "fast_bundle_bundle_with_ids_zpQkTP": {
+          "type": "shopify:\/\/apps\/fast-bundle\/blocks\/bundle_with_ids\/9e87fbe2-9041-4c23-acf5-322413994cef",
+          "settings": {
+            "bundle_ids": "859cb969-9e0e-4ee3-b5b4-eb69f24c3ddf"
+          }
+        }
+      },
+      "block_order": [
+        "fast_bundle_bundle_with_ids_zpQkTP"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_MrT9rJ",
+    "1710832959586c0f9e"
+  ]
+}

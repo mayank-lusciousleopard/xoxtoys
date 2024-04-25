@@ -1,0 +1,230 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_MrT9rJ": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_6ihWKq": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Mix & Match",
+            "heading_size": "h1"
+          }
+        },
+        "text_QEU474": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Les prix sont dégressifs.<br\/>Plus vous achetez, plus vous économisez !<\/p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_XprkwU": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "shopify:\/\/pages\/contact-form",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6ihWKq",
+        "text_QEU474",
+        "buttons_XprkwU"
+      ],
+      "custom_css": [
+        ".banner__content {z-index: 0; display: none;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "image": "shopify:\/\/shop_images\/b04_xox_2_1.png",
+        "mobile_image": "shopify:\/\/shop_images\/mob_1_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-919eb1fe-4118-47a8-b692-316388bfa490",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "tab_with_collapsible_content_bFXiCg": {
+      "type": "tab-with-collapsible-content",
+      "blocks": {
+        "outertab_7AhYgQ": {
+          "type": "outertab",
+          "settings": {
+            "main_head": "Shipping & Returns",
+            "heading_1": "When will my order be shipped?",
+            "row_content_1": "<p>Your order will be prepared for shipping the same day or the following business day. Expect delivery within 2 to 7 business days. <\/p>",
+            "heading_2": "When can I expect the delivery of my order?",
+            "row_content_2": "<p>Depending on your location, standard shipping take 2 to 7 business days. If you opt for Xpress Shipping, your order will arrive within 2 to 3 business days. <\/p>",
+            "heading_3": "Do you provide discreet packaging and billing?",
+            "row_content_3": "<p>Yes, all orders from XOXTOYS have discreet packaging and billing. The packaging is always unassuming with no label or marking that could expose the content inside.<\/p><p>Your credit card statement will also show a transaction for Wodo Distributing. <\/p>",
+            "heading_4": "What is the shipping cost?",
+            "row_content_4": "<p>Free shipping is available for all orders above $59 and up for Canada and USA. For orders under $59, the standard shipping charges are $11.99. If you opt for Xpress Shipping, your shipping charges will be $18.99.<\/p>",
+            "heading_5": "What is the method for dispatching orders?",
+            "row_content_5": "<p>All orders are shipped via Canada Post.<\/p>",
+            "heading_6": "What is the return policy?",
+            "row_content_6": "<p>Due to the intimate nature of the products, return or exchange are only available for defective or damaged products. You cannot return or exchange any product which is intended to have direct contact with a body part or body fluids.<\/p><p>For more information on return policy, visit: <a href=\"https:\/\/xoxtoys.ca\/pages\/return-policy\"><span style=\"text-decoration:underline\">https:\/\/xoxtoys.ca\/pages\/return-policy<\/span><\/a><\/p>",
+            "heading_7": "What is the XOXTOYS Pleasure Pledge Guarantee?",
+            "row_content_7": "<p>The XOXTOYS Pleasure Pledge Guarantee promises a risk-free experience. If our toys don’t meet your expectations, you can inform us within 45 days of purchase. We will issue a store credit equal to the purchase price, minus shipping fees.<\/p><p>Head over to the <a href=\"https:\/\/xoxtoys.ca\/pages\/xoxtoys-pleasure-pledge-guarantee\"><span style=\"text-decoration:underline\">Pleasure Pledge Guarantee<\/span><\/a> page for more information.<\/p>",
+            "heading_8": "What steps should I take if I receive a defective item?",
+            "row_content_8": "<p>In the event you receive a faulty or defective item, please let us know right away so that we can make things right. <\/p><p>Contact our customer service team at info@xoxtoys.com to learn the specific steps and check your eligibility. <\/p><p>We will request images and video to understand the issue, which will help us remedy the matter as soon as possible. <\/p>",
+            "heading_9": "How can I either cancel my order or modify the delivery address?",
+            "row_content_9": "<p>We can not modify the delivery address once the order has been placed and shipped. Please recheck and confirm your order details at checkout to avoid any issues.<\/p><p>If you notice an error after placing the order, <strong>immediately <\/strong>contact us at <a href=\"mailto:info@xoxtoys.com\"><span style=\"text-decoration:underline\">info@xoxtoys.com<\/span><\/a>. We will try our best to accommodate you. <\/p>",
+            "heading_10": "Do you offer international shipping?",
+            "row_content_10": "<p>Yes, we do offer international shipping. You may incur additional charges depending on the destination. <\/p>",
+            "padding_top": 36,
+            "padding_bottom": 36
+          }
+        },
+        "outertab_BDzm7F": {
+          "type": "outertab",
+          "settings": {
+            "main_head": "General Inquiries",
+            "heading_1": "What is the best method to get in touch with XOXTOYS?",
+            "row_content_1": "<p>To get in touch with XOXTOYS, you can email us at <a href=\"mailto:info@xoxtoys.com\"><span style=\"text-decoration:underline\">info@xoxtoys.com<\/span><\/a>.<\/p>",
+            "heading_2": "How do I recover my password?",
+            "row_content_2": "<p>If you forgot your password, click the Login\/Sign up option at the top. On the Login page, you can click on Recover password to reset it. You will receive an email with the steps on how to recover your password.<\/p>",
+            "heading_3": "How do I opt out of the newsletter?",
+            "row_content_3": "<p>Look for the Unsubscribe button when you receive an issue of the newsletter in your email from XOXTOYS.<\/p>",
+            "heading_4": "",
+            "row_content_4": "",
+            "heading_5": "",
+            "row_content_5": "",
+            "heading_6": "",
+            "row_content_6": "",
+            "heading_7": "",
+            "row_content_7": "",
+            "heading_8": "",
+            "row_content_8": "",
+            "heading_9": "",
+            "row_content_9": "",
+            "heading_10": "",
+            "row_content_10": "",
+            "padding_top": 36,
+            "padding_bottom": 36
+          }
+        },
+        "outertab_8bKK9W": {
+          "type": "outertab",
+          "settings": {
+            "main_head": "Placing an Order",
+            "heading_1": "What steps do I need to follow to make a purchase?",
+            "row_content_1": "<p>You can place an order without creating an account with XOXTOYS. <\/p><p>Go to Checkout and review your shipping details before placing the order. Add your discount code or gift card if you have any. We will start processing your order as soon as payment is made. <\/p>",
+            "heading_2": "Which payment options can I use?",
+            "row_content_2": "<p>We accept all major debit and credit cards including Visa, Mastercard, and American Express. <\/p><p>You can also pay via PayPal. <\/p>",
+            "heading_3": "Is there a physical XOXTOYS store where I can go shopping?",
+            "row_content_3": "<p>No, we operate exclusively online at this point. If you do not want to receive the order at your home, you can add the address information of your nearest post office instead. <\/p><p>Please make a note of it in your order as well. You can pick up your item from the post office. <\/p>",
+            "heading_4": "What if I want to order an item that is out of stock?",
+            "row_content_4": "<p>If an item is out of stock at XOXTOYS or not currently listed, you can contact us at info@xoxtoys.com and we will make the necessary arrangements to accommodate your request.<\/p>",
+            "heading_5": "Is it possible to add a new item to my existing order?",
+            "row_content_5": "<p>You can add a new item to your existing order by contacting us at <a href=\"mailto:info@xoxtoys.com\"><span style=\"text-decoration:underline\">info@xoxtoys.com<\/span><\/a>. However, we can only edit your order if it has not been processed at our warehouse yet. <\/p>",
+            "heading_6": "I made a mistake with my email, billing, or shipping details. What can I do?",
+            "row_content_6": "<p>If you notice an error after placing your order, contact us immediately at <a href=\"mailto:info@xoxtoys.com\"><span style=\"text-decoration:underline\">info@xoxtoys.com<\/span><\/a>. However, we are unable to make any changes to your order once it has been processed.<\/p>",
+            "heading_7": "",
+            "row_content_7": "",
+            "heading_8": "",
+            "row_content_8": "",
+            "heading_9": "",
+            "row_content_9": "",
+            "heading_10": "",
+            "row_content_10": "",
+            "padding_top": 36,
+            "padding_bottom": 36
+          }
+        },
+        "outertab_fhmrqq": {
+          "type": "outertab",
+          "settings": {
+            "main_head": "XOXTOYS Reward Program",
+            "heading_1": "What are XOXTOYS Rewards?",
+            "row_content_1": "<p>XOXTOYS Rewards points work just like cash towards purchases at XOXTOYS<\/p>",
+            "heading_2": "How do I redeem XOXTOYS Rewards?",
+            "row_content_2": "<p>Simply redeem your XOXTOYS Rewards during checkout. You should get your point score and the option to apply it. ??<\/p>",
+            "heading_3": "How do I earn XOXTOYS Rewards?",
+            "row_content_3": "<p>You earn XOXTOYS Rewards when you complete a task like signing up or sharing the social media page of the website. You also get reward points when you buy an item. <\/p>",
+            "heading_4": "Do XOXTOYS Rewards expire?",
+            "row_content_4": "<p>Yes, XOXTOYS reward points expire if you do not redeem them within a given timeframe.  If they fo expire (which I dont think they do) must give details<\/p>",
+            "heading_5": "",
+            "row_content_5": "",
+            "heading_6": "",
+            "row_content_6": "",
+            "heading_7": "",
+            "row_content_7": "",
+            "heading_8": "",
+            "row_content_8": "",
+            "heading_9": "",
+            "row_content_9": "",
+            "heading_10": "",
+            "row_content_10": "",
+            "padding_top": 36,
+            "padding_bottom": 36
+          }
+        },
+        "outertab_YQ9mbF": {
+          "type": "outertab",
+          "settings": {
+            "main_head": "Order Tracking",
+            "heading_1": "What are my next steps if I haven't received a tracking number?",
+            "row_content_1": "<p>You will automatically receive a tracking number via email once your order is placed. If you don’t receive one, contact us at <a href=\"mailto:info@xoxtoys.com\"><span style=\"text-decoration:underline\">info@xoxtoys.com<\/span><\/a>.<\/p>",
+            "heading_2": "For an item I've pre-ordered, how will I be notified when it is dispatched?",
+            "row_content_2": "<p>You will receive an email with your tracking number as soon as the order is processed for delivery. You will also get notifications of confirmation when the order is placed and when it arrives at our facility.<\/p>",
+            "heading_3": "I've made a recent purchase. How can I monitor its delivery status?",
+            "row_content_3": "<p>You will receive a tracking number via email once your order is shipped. <\/p>",
+            "heading_4": "Will XOXTOYS provide a replacement if a package is lost?",
+            "row_content_4": "<p>If you don’t get your parcel within your delivery date, please inform us via email at <a href=\"mailto:info@xoxtoys.com\"><span style=\"text-decoration:underline\">info@xoxtoys.com<\/span><\/a>. We will check with Canada Post to determine the status of the order. Canada Post may also contact you to verify some details. <\/p><p>If it turns out your parcel has been lost, we will send out a replacement package free of cost.<\/p>",
+            "heading_5": "",
+            "row_content_5": "",
+            "heading_6": "",
+            "row_content_6": "",
+            "heading_7": "",
+            "row_content_7": "",
+            "heading_8": "",
+            "row_content_8": "",
+            "heading_9": "",
+            "row_content_9": "",
+            "heading_10": "",
+            "row_content_10": "",
+            "padding_top": 36,
+            "padding_bottom": 36
+          }
+        }
+      },
+      "block_order": [
+        "outertab_7AhYgQ",
+        "outertab_BDzm7F",
+        "outertab_8bKK9W",
+        "outertab_fhmrqq",
+        "outertab_YQ9mbF"
+      ],
+      "settings": {
+        "color_scheme": "accent-1",
+        "extra_content": "FAQs",
+        "make_h1": false,
+        "description": "<p>more exploration. more excitement.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_MrT9rJ",
+    "tab_with_collapsible_content_bFXiCg"
+  ]
+}

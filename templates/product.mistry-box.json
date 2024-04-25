@@ -2,7 +2,47 @@
   "sections": {
     "new_breadcrumbs_PhdYtw": {
       "type": "new-breadcrumbs",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "slideshow_pADgf6": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_yxGUjR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_251_1.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_yxGUjR"
+      ],
+      "custom_css": [
+        ".slideshow__text-wrapper {display: none !important;}"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
       }
     },
     "main": {
@@ -99,14 +139,47 @@
         "mobile_thumbnails": "show",
         "hide_variants": true,
         "enable_video_looping": false,
-        "padding_top": 0,
-        "padding_bottom": 12,
+        "padding_top": 20,
+        "padding_bottom": 32,
         "svg_icon_code_1": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"46\" height=\"46\" viewBox=\"0 0 46 46\" fill=\"none\">\n  <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M1.91675 5.75016C1.91675 5.24183 2.11868 4.75432 2.47813 4.39487C2.83757 4.03543 3.32508 3.8335 3.83341 3.8335H24.9167C25.4251 3.8335 25.9126 4.03543 26.272 4.39487C26.6315 4.75432 26.8334 5.24183 26.8334 5.75016V15.3335H34.5001C35.7586 15.3335 37.0048 15.5814 38.1675 16.063C39.3302 16.5446 40.3866 17.2505 41.2765 18.1404C42.1664 19.0303 42.8723 20.0867 43.3539 21.2494C43.8355 22.4122 44.0834 23.6583 44.0834 24.9168V32.5835C44.0836 33.8174 43.687 35.0186 42.9523 36.0098C42.2175 37.001 41.1834 37.7296 40.0028 38.0882C39.6513 39.2477 38.9425 40.2666 37.9774 40.9994C37.0124 41.7322 35.8406 42.1414 34.6292 42.1686C33.4178 42.1958 32.2288 41.8396 31.2319 41.1509C30.2349 40.4622 29.4811 39.4761 29.0778 38.3335H16.9242C16.521 39.4761 15.7671 40.4622 14.7702 41.1509C13.7733 41.8396 12.5843 42.1958 11.3729 42.1686C10.1615 42.1414 8.98965 41.7322 8.02464 40.9994C7.05963 40.2666 6.35077 39.2477 5.99925 38.0882C4.81827 37.73 3.78381 37.0015 3.04867 36.0102C2.31352 35.019 1.91667 33.8176 1.91675 32.5835V24.9168H13.4167C13.9251 24.9168 14.4126 24.7149 14.772 24.3555C15.1315 23.996 15.3334 23.5085 15.3334 23.0002C15.3334 22.4918 15.1315 22.0043 14.772 21.6449C14.4126 21.2854 13.9251 21.0835 13.4167 21.0835H1.91675V17.2502H9.58342C10.0917 17.2502 10.5793 17.0482 10.9387 16.6888C11.2981 16.3293 11.5001 15.8418 11.5001 15.3335C11.5001 14.8252 11.2981 14.3377 10.9387 13.9782C10.5793 13.6188 10.0917 13.4168 9.58342 13.4168H1.91675V5.75016ZM26.8334 34.5002H29.0778C29.4567 33.4277 30.1452 32.4917 31.0562 31.8106C31.9671 31.1294 33.0597 30.7338 34.1955 30.6737C35.3314 30.6136 36.4595 30.8917 37.4373 31.4728C38.4151 32.054 39.1985 32.9121 39.6885 33.9386C39.8667 33.7608 40.0081 33.5496 40.1045 33.3171C40.2009 33.0845 40.2503 32.8352 40.2501 32.5835V24.9168C40.2501 23.3918 39.6443 21.9293 38.5659 20.851C37.4876 19.7726 36.0251 19.1668 34.5001 19.1668H26.8334V34.5002ZM13.4167 36.4168C13.4167 35.9085 13.2148 35.421 12.8554 35.0615C12.4959 34.7021 12.0084 34.5002 11.5001 34.5002C10.9917 34.5002 10.5042 34.7021 10.1448 35.0615C9.78535 35.421 9.58342 35.9085 9.58342 36.4168C9.58342 36.9252 9.78535 37.4127 10.1448 37.7721C10.5042 38.1316 10.9917 38.3335 11.5001 38.3335C12.0084 38.3335 12.4959 38.1316 12.8554 37.7721C13.2148 37.4127 13.4167 36.9252 13.4167 36.4168ZM33.145 35.0617C32.9665 35.2393 32.825 35.4505 32.7286 35.6831C32.6322 35.9157 32.5828 36.1651 32.5834 36.4168C32.5833 36.8603 32.737 37.29 33.0182 37.6329C33.2995 37.9757 33.6909 38.2104 34.1258 38.297C34.5607 38.3836 35.0122 38.3167 35.4033 38.1078C35.7944 37.8988 36.1009 37.5607 36.2707 37.151C36.4405 36.7414 36.463 36.2855 36.3343 35.8612C36.2057 35.4368 35.9339 35.0702 35.5652 34.8238C35.1965 34.5773 34.7538 34.4664 34.3125 34.5098C33.8712 34.5532 33.4586 34.7482 33.145 35.0617Z\" fill=\"#8E6ABD\"\/>\n<\/svg>",
         "my_block_text_1": "<p>Discreet<br\/>Delivery<\/p>",
         "svg_icon_code_2": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"46\" height=\"46\" viewBox=\"0 0 46 46\" fill=\"none\">\n  <path d=\"M5.75008 38.3332C4.69591 38.3332 3.7938 37.9581 3.04375 37.2081C2.29369 36.458 1.91803 35.5553 1.91675 34.4998V13.4165H5.75008V34.4998H38.3334V38.3332H5.75008ZM13.4167 30.6665C12.3626 30.6665 11.4605 30.2915 10.7104 29.5414C9.96036 28.7914 9.58469 27.8886 9.58342 26.8332V11.4998C9.58342 10.4457 9.95908 9.54356 10.7104 8.7935C11.4617 8.04345 12.3639 7.66778 13.4167 7.6665H40.2501C41.3042 7.6665 42.207 8.04217 42.9583 8.7935C43.7097 9.54484 44.0847 10.4469 44.0834 11.4998V26.8332C44.0834 27.8873 43.7084 28.7901 42.9583 29.5414C42.2083 30.2928 41.3055 30.6678 40.2501 30.6665H13.4167ZM17.2501 26.8332C17.2501 25.779 16.8751 24.8769 16.125 24.1268C15.3749 23.3768 14.4722 23.0011 13.4167 22.9998V26.8332H17.2501ZM36.4167 26.8332H40.2501V22.9998C39.1959 22.9998 38.2938 23.3755 37.5437 24.1268C36.7937 24.8782 36.418 25.7803 36.4167 26.8332ZM26.8334 24.9165C28.4306 24.9165 29.7883 24.3575 30.9063 23.2394C32.0244 22.1214 32.5834 20.7637 32.5834 19.1665C32.5834 17.5693 32.0244 16.2116 30.9063 15.0936C29.7883 13.9755 28.4306 13.4165 26.8334 13.4165C25.2362 13.4165 23.8786 13.9755 22.7605 15.0936C21.6424 16.2116 21.0834 17.5693 21.0834 19.1665C21.0834 20.7637 21.6424 22.1214 22.7605 23.2394C23.8786 24.3575 25.2362 24.9165 26.8334 24.9165ZM13.4167 15.3332C14.4709 15.3332 15.3737 14.9581 16.125 14.2081C16.8763 13.458 17.2514 12.5553 17.2501 11.4998H13.4167V15.3332ZM40.2501 15.3332V11.4998H36.4167C36.4167 12.554 36.7924 13.4568 37.5437 14.2081C38.2951 14.9594 39.1972 15.3344 40.2501 15.3332Z\" fill=\"#8E6ABD\"\/>\n<\/svg>",
         "my_block_text_2": "<p>Secure<br\/>payments<\/p>",
         "svg_icon_code_3": "",
         "my_block_text_3": ""
+      }
+    },
+    "image_banner_qkRfnt": {
+      "type": "image-banner",
+      "settings": {
+        "custom_class": "",
+        "image": "shopify:\/\/shop_images\/image_-_2024-04-10T102114.056.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "mistery_product_varient_KCixeA": {
+      "type": "mistery-product-varient",
+      "settings": {
+        "title": "Mystery Product Variants",
+        "heading_size": "h2",
+        "description": "<p>more exploration. more excitement.<\/p>",
+        "product": "adam-eve-small-red-heart-gem-glass-plug",
+        "show_mobile_slider": true,
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "full_width": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "product_video_GkCHM6": {
@@ -376,6 +449,7 @@
       "block_order": [
         "judge_me_reviews_review_widget_rhBFxr"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -499,6 +573,7 @@
         "column_Ecrxfn",
         "column_f4Umbt"
       ],
+      "disabled": true,
       "custom_css": [
         ".multicolumn.background-primary .multicolumn-card {background: transparent;}",
         ".multicolumn-list__item.center .media--adapt,.multicolumn-list__item.center .media--adapt img {position: unset; padding: 0 !important; display: block; transform: none; width: 50px; height: 50px; margin: 0 auto;}",
@@ -560,6 +635,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "Related Products",
         "heading_size": "h2",
@@ -582,6 +658,7 @@
     },
     "recently_viewed_products_FKRMwa": {
       "type": "recently-viewed-products",
+      "disabled": true,
       "settings": {
         "color_scheme": "accent-2",
         "title": "Recently Viewed Products"
@@ -618,6 +695,7 @@
         "text_aTfG4q",
         "button_kdCc9N"
       ],
+      "disabled": true,
       "custom_css": [
         ".new-image-with-text-section {background: #e9cbf5;}",
         "@media screen and (max-width: 767px) {.new-image-with-text-section .image-with-text__media, .new-image-with-text-section .image-with-text__media img {max-width: 80% !important; margin: 0 auto; padding: 0 !important; position: unset !important; height: auto !important; }}"
@@ -676,7 +754,10 @@
   },
   "order": [
     "new_breadcrumbs_PhdYtw",
+    "slideshow_pADgf6",
     "main",
+    "image_banner_qkRfnt",
+    "mistery_product_varient_KCixeA",
     "product_video_GkCHM6",
     "product_banner_dwajci",
     "ingredients_tabs_kh7V39",

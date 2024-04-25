@@ -1,11 +1,56 @@
 {
   "sections": {
+    "new_breadcrumbs_6XC3eG": {
+      "type": "new-breadcrumbs",
+      "settings": {
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
         "color_scheme": "background-1"
+      }
+    },
+    "custom_liquid_4RbF6K": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"collection-top-banner\">\n        {% if collection.metafields.global.banner.value %}\n        <img class=\"{% if collection.metafields.global.mobile_banner.value %}desk-collection-banner{% endif %}\" alt=\"{{ collection.name }}\" src=\"{{ collection.metafields.global.banner.value }}\" \/>\n        {% endif %}\n        {% if collection.metafields.global.mobile_banner.value %}\n        <img class=\"mobi-collection-banner\" alt=\"{{ collection.name }}\" src=\"{{ collection.metafields.global.mobile_banner.value }}\" \/>\n        {% endif %}\n    <\/div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_i4DUcp": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9wa3UT": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.title }}",
+            "heading_size": "h2"
+          }
+        },
+        "custom_liquid_GHkYk3": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{{ collection.description }}"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9wa3UT",
+        "custom_liquid_GHkYk3"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-6e3c20f7-f37c-4997-bdd4-349756a3ea60",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "product-grid": {
@@ -13,13 +58,13 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
+        "color_scheme": "scheme-57a546e2-c041-4e9f-8e7b-5306510aeb5b",
+        "image_ratio": "square",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
+        "show_rating": true,
+        "enable_quick_add": true,
         "enable_filtering": true,
         "filter_type": "horizontal",
         "enable_sorting": true,
@@ -27,10 +72,101 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "new_image_with_text_iQ78M8": {
+      "type": "new-image-with-text",
+      "blocks": {
+        "heading_LjbUUr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mystery Box",
+            "heading_size": "h2"
+          }
+        },
+        "text_xTgT6G": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Step out of your comfort zone with exclusively curated erotic items from XOXTOYS. Give yourself permission to try a bit of everything- something tame, something kinky, and something safe. A Mystery Box from XOXTOYS makes for an exciting birthday present or a fun couple’s challenge.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_VHEdF8": {
+          "type": "button",
+          "settings": {
+            "button_label": "GET YOURS NOW!",
+            "button_link": "shopify:\/\/products\/mystery-box",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LjbUUr",
+        "text_xTgT6G",
+        "button_VHEdF8"
+      ],
+      "custom_css": [
+        ".new-image-with-text-section {background: #e9cbf5;}",
+        "@media screen and (max-width: 767px) {.new-image-with-text-section .image-with-text__media, .new-image-with-text-section .image-with-text__media img {max-width: 80% !important; margin: 0 auto; padding: 0 !important; position: unset !important; height: auto !important; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/gift_xox.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-fbc40351-df4a-4093-ae8e-4778b2860b28",
+        "color_scheme": "scheme-fbc40351-df4a-4093-ae8e-4778b2860b28",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter_CPJDnj": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_cnQ68z": {
+          "type": "heading",
+          "settings": {
+            "heading": "NEWSLETTER",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_KwjCAJ": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be in the know about our most exclusive sales of the year.<\/p>"
+          }
+        },
+        "email_form_KGDGPa": {
+          "type": "email_form",
+          "settings": {
+            "placeholder": "Type here..."
+          }
+        }
+      },
+      "block_order": [
+        "heading_cnQ68z",
+        "paragraph_KwjCAJ",
+        "email_form_KGDGPa"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
+    "new_breadcrumbs_6XC3eG",
     "banner",
-    "product-grid"
+    "custom_liquid_4RbF6K",
+    "rich_text_i4DUcp",
+    "product-grid",
+    "new_image_with_text_iQ78M8",
+    "newsletter_CPJDnj"
   ]
 }

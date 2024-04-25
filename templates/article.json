@@ -1,19 +1,29 @@
 {
   "sections": {
+    "new_breadcrumbs_Ynz7U8": {
+      "type": "new-breadcrumbs",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-article",
       "blocks": {
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
-            "blog_show_date": true,
-            "blog_show_author": false
+            "blog_show_date": false,
+            "blog_show_author": true
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "small"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
           }
         },
         "share": {
@@ -21,24 +31,76 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "content": {
-          "type": "content",
+        }
+      },
+      "block_order": [
+        "title",
+        "featured_image",
+        "content",
+        "share"
+      ],
+      "settings": {
+      }
+    },
+    "new_featured_blog_iXBkcx": {
+      "type": "new-featured-blog",
+      "settings": {
+        "heading": "Suggested For You",
+        "heading_size": "h2",
+        "description": "",
+        "post_limit": 4,
+        "columns_desktop": 3,
+        "color_scheme": "accent-2",
+        "show_image": true,
+        "show_date": false,
+        "show_author": true,
+        "show_view_all": false,
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false
+      }
+    },
+    "newsletter_kdTz3J": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_QGj7MY": {
+          "type": "heading",
           "settings": {
+            "heading": "NEWSLETTER",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_qdtFdg": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be in the know about our most exclusive sales of the year.<\/p>"
+          }
+        },
+        "email_form_gMykTA": {
+          "type": "email_form",
+          "settings": {
+            "placeholder": "Type here..."
           }
         }
       },
       "block_order": [
-        "featured_image",
-        "title",
-        "share",
-        "content"
+        "heading_QGj7MY",
+        "paragraph_qdtFdg",
+        "email_form_gMykTA"
       ],
       "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "main"
+    "new_breadcrumbs_Ynz7U8",
+    "main",
+    "new_featured_blog_iXBkcx",
+    "newsletter_kdTz3J"
   ]
 }

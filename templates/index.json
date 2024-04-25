@@ -1,46 +1,142 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
+    "459eb6f2-e63c-4d78-b3c4-481a11c15131": {
+      "type": "slideshow",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "slide_8piiGV": {
+          "type": "slide",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "image": "shopify:\/\/shop_images\/web-banner_wmz-bogo-v3.png",
+            "mobile_image": "shopify:\/\/shop_images\/mobile-banner_wmz-bogo-v3.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify:\/\/products\/womanizer-premium-2-clitoral-stimulator",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
           }
         },
-        "button": {
-          "type": "buttons",
+        "slide_Nexbkf": {
+          "type": "slide",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify:\/\/shop_images\/b05_xox_9.png",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_1171278480_7.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify:\/\/pages\/brands",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_heyCPh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b01_xox_6.png",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_1171278483_6.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/all-toys",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_pCxdDy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b03_xox_6.png",
+            "mobile_image": "shopify:\/\/shop_images\/Frame_1171278500.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify:\/\/collections",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "slide_8piiGV",
+        "slide_Nexbkf",
+        "slide_heyCPh",
+        "slide_pCxdDy"
+      ],
+      "custom_css": [
+        ".slideshow__text-wrapper {display: none;}"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "inverse",
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": false,
+        "accessibility_info": ""
+      }
+    },
+    "5aa4a93a-9542-426d-9b89-522c2960d649": {
+      "type": "my-featured-collection",
+      "custom_css": [
+        ".collection__description p {color: #8e6abd;}",
+        "@media screen and (min-width: 768px) {.my-featured-collection-section ul.product-grid {padding-top: 1rem; padding-bottom: 1rem; }}"
+      ],
+      "settings": {
+        "title": "Best Sellers",
+        "heading_size": "h2",
+        "description": "<p>more exploration. more excitement.<\/p>",
+        "button_style_secondary": true,
+        "show_description": false,
+        "description_style": "body",
+        "collection": "best-sellers",
+        "products_to_show": 6,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_btn_text": "Shop All Best Sellers",
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-57a546e2-c041-4e9f-8e7b-5306510aeb5b",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 28
       }
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -66,10 +162,1295 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "latest_multicolumn_xUXjyL": {
+      "type": "latest-multicolumn",
+      "blocks": {
+        "column_fmXw8V": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1171278455.png",
+            "title": "Male Toys",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/male-toys"
+          }
+        },
+        "column_wew3tn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1171278456.png",
+            "title": "Female Toys",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/female-toys"
+          }
+        },
+        "column_YLPYz8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_1171278457_1.png",
+            "title": "Couples Toys",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/sex-toys-for-couples"
+          }
+        },
+        "column_miUhy4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/new_arrival_1.png",
+            "title": "New Arrivals",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/new-arrivals"
+          }
+        }
+      },
+      "block_order": [
+        "column_fmXw8V",
+        "column_wew3tn",
+        "column_YLPYz8",
+        "column_miUhy4"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.latest-multicolumn-section > div {padding-top: 0; }}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "e9e95b29-3a19-4103-98e9-3d9b6dd26f8e": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--15242575675470__e9e95b29-3a19-4103-98e9-3d9b6dd26f8e-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Secured_Package.png",
+            "title": "<p>Discreet Delivery<\/p>",
+            "text": "<p>Your privacy is our priority.  All orders are shipped in plain packaging with nothing to indicate the contents inside. From billing to shipping, shop with confidence knowing your order will be discreet and confidential<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "91617280-35ee-46ea-9827-cde60f56a23c": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Delivery_Tracking.png",
+            "title": "<p>Worldwide Shipping<\/p>",
+            "text": "<p>We deliver pleasure products globally. Explore and shop our exquisite range, wherever you are.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_weNMBE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Delivery_Tracking.png",
+            "title": "<p>BUY NOW, PAY LATER WITH KLARNA<\/p>",
+            "text": "<p>Pay for what you love right away.<br\/>Pay in 4. Split your purchase into 4 interest-free payments.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "6eeb2862-a978-4a1e-a746-c07fba75fbac": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Card_Security.png",
+            "title": "<p>Secure online payment<\/p>",
+            "text": "<p>Your payment details and personal information will remain safe and secure. We don’t store your information and we utilize the latest encryption technology to keep your payment details protected<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Bk4ThJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shipping_1.png",
+            "title": "<p>Free Shipping on $59<\/p>",
+            "text": "<p>Receive free shipping within Canada and USA for orders of $59 or more.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UDxBab": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/unknown_1.png",
+            "title": "<p>embrace the unknown!<\/p>",
+            "text": "<p>Choose only a price and trust in our promise. Visit our Mystery Box section and let us surprise you with a delightful mystery.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_yiXifT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gift_1.png",
+            "title": "<p>Receive a free Gift at $100<\/p>",
+            "text": "<p>Select one of three options at checkout for every purchase exceeding $100.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15242575675470__e9e95b29-3a19-4103-98e9-3d9b6dd26f8e-column-1",
+        "91617280-35ee-46ea-9827-cde60f56a23c",
+        "column_weNMBE",
+        "6eeb2862-a978-4a1e-a746-c07fba75fbac",
+        "column_Bk4ThJ",
+        "column_UDxBab",
+        "column_yiXifT"
+      ],
+      "custom_css": [
+        ".multicolumn.background-primary .multicolumn-card {background: transparent;}",
+        ".multicolumn-list__item.center .media--adapt,.multicolumn-list__item.center .media--adapt img {position: unset; padding: 0 !important; display: block; transform: none; width: 50px; height: 50px; margin: 0 auto;}",
+        ".multicolumn-list h3 {text-transform: uppercase;}",
+        "@media screen and (min-width: 768px) {.multicolumn-list h3 {font-size: 20px; }}"
+      ],
+      "settings": {
+        "custom_class": "mob_marquee",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-416f6cfd-7d5d-4291-aa29-dcc4d28f2278",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_image_with_text_XL6wCR": {
+      "type": "new-image-with-text",
+      "blocks": {
+        "heading_EFrtyB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Mystery Box",
+            "heading_size": "h2"
+          }
+        },
+        "text_aLj3Yq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Step out of your comfort zone with exclusively curated erotic items from XOXTOYS. Give yourself permission to try a bit of everything- something tame, something kinky, and something safe. A Mystery Box from XOXTOYS makes for an exciting birthday present or a fun couple’s challenge.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_9DCbJW": {
+          "type": "button",
+          "settings": {
+            "button_label": "GET YOURS NOW!",
+            "button_link": "shopify:\/\/products\/mystery-box",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EFrtyB",
+        "text_aLj3Yq",
+        "button_9DCbJW"
+      ],
+      "custom_css": [
+        ".new-image-with-text-section {background: #e9cbf5;}",
+        "@media screen and (max-width: 767px) {.new-image-with-text-section .image-with-text__media, .new-image-with-text-section .image-with-text__media img {max-width: 80% !important; margin: 0 auto; padding: 0 !important; position: unset !important; height: auto !important; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/gift_xox.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-fbc40351-df4a-4093-ae8e-4778b2860b28",
+        "color_scheme": "scheme-fbc40351-df4a-4093-ae8e-4778b2860b28",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 8,
+        "padding_bottom": 36
+      }
+    },
+    "logo_list_PMBYBT": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_BtdnfU": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_214_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/liberator"
+          }
+        },
+        "logo_image_JeNeJm": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_225.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/doc-johnson"
+          }
+        },
+        "logo_image_EfhtgQ": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_219_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/tenga"
+          }
+        },
+        "logo_image_aiw4Yi": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_220.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/we-vibe"
+          }
+        },
+        "logo_image_W4BdTR": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_218_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/we-vibe"
+          }
+        },
+        "logo_image_ixmjgN": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_227.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/wicked"
+          }
+        },
+        "logo_image_AJtfid": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_211_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/satisfyer"
+          }
+        },
+        "logo_image_BJ9cbR": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_223.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/aneros"
+          }
+        },
+        "logo_image_MmHqPE": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_229.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/pipedream-products"
+          }
+        },
+        "logo_image_mADn48": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_212_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/dame"
+          }
+        },
+        "logo_image_DN7V74": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_224.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/calexotics"
+          }
+        },
+        "logo_image_waf87b": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_216_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/magic-wand"
+          }
+        },
+        "logo_image_Gn4x34": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_210_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/lelo"
+          }
+        },
+        "logo_image_MgK8gR": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_222.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/fun-factory"
+          }
+        },
+        "logo_image_B6yMc3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_215_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/sliquid"
+          }
+        },
+        "logo_image_96eCir": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_213_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/foria"
+          }
+        },
+        "logo_image_mqewMj": {
+          "type": "logo_image",
+          "settings": {
+            "logo_title": "Logo list",
+            "link": ""
+          }
+        },
+        "logo_image_7cxyr9": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_208_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/womanizer"
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_BtdnfU",
+        "logo_image_JeNeJm",
+        "logo_image_EfhtgQ",
+        "logo_image_aiw4Yi",
+        "logo_image_W4BdTR",
+        "logo_image_ixmjgN",
+        "logo_image_AJtfid",
+        "logo_image_BJ9cbR",
+        "logo_image_MmHqPE",
+        "logo_image_mADn48",
+        "logo_image_DN7V74",
+        "logo_image_waf87b",
+        "logo_image_Gn4x34",
+        "logo_image_MgK8gR",
+        "logo_image_B6yMc3",
+        "logo_image_96eCir",
+        "logo_image_mqewMj",
+        "logo_image_7cxyr9"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "title": "",
+        "logo_width": "160px"
+      }
+    },
+    "logo_list_tG9JCm": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_tKeBHX": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/arcwave_5.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/arcwave"
+          }
+        },
+        "logo_image_FPr8yM": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ass-thumper_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/ass-thumper"
+          }
+        },
+        "logo_image_6h6xxg": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/astroglide_5.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/astroglide"
+          }
+        },
+        "logo_image_n9Xmmd": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/autoblow_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/autoblow"
+          }
+        },
+        "logo_image_T9X3em": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/b-vibe_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/b-vibe"
+          }
+        },
+        "logo_image_qNrx9T": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bathmate_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/bathmate"
+          }
+        },
+        "logo_image_HWHXNt": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/before-after_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/before-after"
+          }
+        },
+        "logo_image_6DE8Qx": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bewicked_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/bewicked"
+          }
+        },
+        "logo_image_nzGCGh": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_109.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/bijoux-pour-toi"
+          }
+        },
+        "logo_image_thPbt6": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_110.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/bloomgasm"
+          }
+        },
+        "logo_image_hnFW7y": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_111.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/blossom-organics"
+          }
+        },
+        "logo_image_cQNmiF": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bms-factory_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/bms-factory"
+          }
+        },
+        "logo_image_i66eWg": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_113.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/booty-glove"
+          }
+        },
+        "logo_image_FzkYnw": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/calexotics_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/calexotics"
+          }
+        },
+        "logo_image_L8PrwB": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_115.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/cb-x"
+          }
+        },
+        "logo_image_U3UehQ": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_116.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/cg"
+          }
+        },
+        "logo_image_KkMwrz": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_117.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/charmed"
+          }
+        },
+        "logo_image_bhhr6B": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_118.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/classic-erotica"
+          }
+        },
+        "logo_image_efVnw3": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_119.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/colt"
+          }
+        },
+        "logo_image_w7ixAK": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_120.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/copulus"
+          }
+        },
+        "logo_image_RJKLrM": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_121.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/cowgirl"
+          }
+        },
+        "logo_image_XJFGWf": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/creative-conceptions_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/creative-conceptions"
+          }
+        },
+        "logo_image_xQCcLW": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_122.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/creature-cocks"
+          }
+        },
+        "logo_image_rQaYnK": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_123.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/cumcum-lube"
+          }
+        },
+        "logo_image_FFC3UB": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_124.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/dame"
+          }
+        },
+        "logo_image_yydg64": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_125.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/dd-stacks"
+          }
+        },
+        "logo_image_EF78kj": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/deeva_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/deeva"
+          }
+        },
+        "logo_image_nPYiJL": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/deia_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/deia"
+          }
+        },
+        "logo_image_BNY8wQ": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/doc-johnson_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/doc-johnson"
+          }
+        },
+        "logo_image_cF9yNc": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/dorcel_1.png",
+            "logo_title": "",
+            "link": "shopify:\/\/collections\/dorcel"
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_tKeBHX",
+        "logo_image_FPr8yM",
+        "logo_image_6h6xxg",
+        "logo_image_n9Xmmd",
+        "logo_image_T9X3em",
+        "logo_image_qNrx9T",
+        "logo_image_HWHXNt",
+        "logo_image_6DE8Qx",
+        "logo_image_nzGCGh",
+        "logo_image_thPbt6",
+        "logo_image_hnFW7y",
+        "logo_image_cQNmiF",
+        "logo_image_i66eWg",
+        "logo_image_FzkYnw",
+        "logo_image_L8PrwB",
+        "logo_image_U3UehQ",
+        "logo_image_KkMwrz",
+        "logo_image_bhhr6B",
+        "logo_image_efVnw3",
+        "logo_image_w7ixAK",
+        "logo_image_RJKLrM",
+        "logo_image_XJFGWf",
+        "logo_image_xQCcLW",
+        "logo_image_rQaYnK",
+        "logo_image_FFC3UB",
+        "logo_image_yydg64",
+        "logo_image_EF78kj",
+        "logo_image_nPYiJL",
+        "logo_image_BNY8wQ",
+        "logo_image_cF9yNc"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "title": "",
+        "logo_width": "160px"
+      }
+    },
+    "new_multicolumn_wgkxdy": {
+      "type": "new-multicolumn",
+      "blocks": {
+        "column_hBfw3n": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_43.png",
+            "title": "Lubes & Lotions",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_rjyTEF": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_44.png",
+            "title": "Dildos",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_JDyxWR": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_45.png",
+            "title": "Vibrators",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_3bcPTQ": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_46.png",
+            "title": "Staff Picks",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_tiTJBi": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_43.png",
+            "title": "Lubes & Lotions",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_b6mcg6": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_44.png",
+            "title": "Dildos",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_ifmL66": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_45.png",
+            "title": "Vibrators",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_mciHYJ": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_46.png",
+            "title": "Staff Picks",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_w67NdE": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vush-Clean-Queen-Sex-Toy-Cleaner-80-mL-Toy-Cleaners-Vush-xoxtoys.jpg",
+            "title": "Toy Cleaners",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_hBfw3n",
+        "column_rjyTEF",
+        "column_JDyxWR",
+        "column_3bcPTQ",
+        "column_tiTJBi",
+        "column_b6mcg6",
+        "column_ifmL66",
+        "column_mciHYJ",
+        "column_w67NdE"
+      ],
+      "custom_css": [
+        ".multicolumn.background-primary .multicolumn-card {background: transparent;}",
+        "@media screen and (max-width: 767px) {.new-multicolumn-section > div {padding-top: 0; }}",
+        "@media screen and (min-width: 768px) {.new-multicolumn-section > div {padding-top: 1rem; }}"
+      ],
+      "settings": {
+        "title": "Categories",
+        "heading_size": "h2",
+        "image_width": "full",
+        "description": "<p>All You Will Need, For All Your Needs<\/p>",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 32,
+        "padding_bottom": 0
+      }
+    },
+    "old_multicolumn_RE7TnB": {
+      "type": "old-multicolumn",
+      "blocks": {
+        "column_6W8imd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lubes_and_Lotions_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/lubes-oil"
+          }
+        },
+        "column_rbaT9K": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dildos_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/dildos"
+          }
+        },
+        "column_QKGxR4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vibrators_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/vibrators"
+          }
+        },
+        "column_GPEJbU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bdsm_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/all-bdsm"
+          }
+        },
+        "column_MKjTCQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Male_Masturbation_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/male-masturbator-toys"
+          }
+        },
+        "column_ETiUVQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Pheromones_2.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/pheromones"
+          }
+        },
+        "column_3mFQ84": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Anal_toys.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/all-anal-toys"
+          }
+        },
+        "column_GyF4Y7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Novelty_and_Party.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/collections\/novelties-parties-sex-toys"
+          }
+        }
+      },
+      "block_order": [
+        "column_6W8imd",
+        "column_rbaT9K",
+        "column_QKGxR4",
+        "column_GPEJbU",
+        "column_MKjTCQ",
+        "column_ETiUVQ",
+        "column_3mFQ84",
+        "column_GyF4Y7"
+      ],
+      "custom_css": [
+        "ul.multicolumn-list {--grid-mobile-vertical-spacing: 1rem; --grid-mobile-horizontal-spacing: 1rem;}",
+        "@media screen and (min-width: 768px) {.old-multicolumn-section li.grid__item:nth-child(7), .old-multicolumn-section li.grid__item:nth-child(8) {display: none; }}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Shop All Categories",
+        "button_link": "shopify:\/\/collections",
+        "color_scheme": "scheme-57a546e2-c041-4e9f-8e7b-5306510aeb5b",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_MrT9rJ": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_6ihWKq": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Mix & Match",
+            "heading_size": "h1"
+          }
+        },
+        "text_QEU474": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Les prix sont dégressifs.<br\/>Plus vous achetez, plus vous économisez !<\/p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_XprkwU": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Create Your Bundle",
+            "button_link_1": "\/pages\/collection-bundle\/?b=859cb969-9e0e-4ee3-b5b4-eb69f24c3ddf",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6ihWKq",
+        "text_QEU474",
+        "buttons_XprkwU"
+      ],
+      "custom_css": [
+        "a.button.button--primary {border-radius: 100px; box-shadow: none; background: transparent; border: 1px solid #8e6abd; color: #8e6abd;}",
+        "a.button.button--primary:hover {background: #8e6abd; color: #fff; border-color: #8e6abd;}",
+        ".banner__box.content-container {padding-bottom: 0;}",
+        ".banner__content {padding-bottom: 5rem;}",
+        "@media screen and (max-width: 767px) {.banner__content {position: absolute; height: 100%; } .banner__content {align-items: flex-end !important; padding-bottom: 3rem; }}"
+      ],
+      "settings": {
+        "custom_class": "my-mix-match-banner-sec",
+        "image": "shopify:\/\/shop_images\/mix_and_match_xox_desktop_6_1.png",
+        "mobile_image": "shopify:\/\/shop_images\/mix_match_xox_mobile_8_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-fbc40351-df4a-4093-ae8e-4778b2860b28",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_blog_Pd44Ut": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blogs",
+        "heading_size": "h2",
+        "description": "<p>Discover your sensual side.<\/p>",
+        "blog": "blog",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "accent-2",
+        "show_image": true,
+        "show_date": false,
+        "show_author": true,
+        "show_view_all": true,
+        "view_all_text": "Read More",
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true
+      }
+    },
+    "testimonials_idXRNw": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_9dFErg": {
+          "type": "testimonial",
+          "settings": {
+            "title": "<strong>Great Service<\/strong>",
+            "content": "<p>Customer service team were very helpful when I wasn’t sure what I was looking for exactly, my parcel arrived really discreetly which is a must of course! And they even had a small handwritten note in there that was very nice!<\/p>",
+            "image": "shopify:\/\/shop_images\/image_-_2024-02-21T141742.057.png",
+            "author": "<strong>Steven H.<\/strong>",
+            "rating": "<p>Satisfyer Epic Duo Ring Vibrator<\/p>"
+          }
+        },
+        "testimonial_gTHRFF": {
+          "type": "testimonial",
+          "settings": {
+            "title": "<strong>Very customer focused company<\/strong>",
+            "content": "<p>First time purchasing from XOXTOYS, shipping was very quick to start off. Then when I opened the package it was packed really well, good presentation. On top was a handwritten thank you note, and an extra gift of a little tin of body butter. Makes me feel appreciated as a customer :) <\/p>",
+            "image": "shopify:\/\/shop_images\/image_-_2024-02-21T142153.625.png",
+            "author": "<strong>Emma<\/strong>",
+            "rating": "<p>Calexotics Boundless Rope Black<\/p>"
+          }
+        },
+        "testimonial_hGLmwD": {
+          "type": "testimonial",
+          "settings": {
+            "title": "<strong>Best online experience<\/strong>",
+            "content": "<p>Xoxtoys has been so nice to shop from. They have such a nice selection of products. And their customer service is the best, bar none. They reply to emails very quickly and are always helpful with any questions. Shipping of package also came super quick so I was pleasantly surprised. Will only be buying from Xox from now on!<\/p>",
+            "image": "shopify:\/\/shop_images\/image_-_2024-02-21T142607.562.png",
+            "author": "<strong>J.F.<\/strong>",
+            "rating": "<p>Dorcel Diamond Anal Plug<\/p>"
+          }
+        },
+        "testimonial_cEJet6": {
+          "type": "testimonial",
+          "settings": {
+            "title": "<strong>5 Star Company<\/strong>",
+            "content": "<p>Fast, discreet shipping. Handwritten thank you note was an appreciated and thoughtful touch. My experience with XOXTOYS has been nothing short of 5 stars and I would most definitely recommend them.<\/p>",
+            "image": "shopify:\/\/shop_images\/ForiaIntimacyMassageOilwithOrganicBotanicalswpackaging.webp",
+            "author": "Anon",
+            "rating": "<p>Foria Awaken Arousal Oil<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_9dFErg",
+        "testimonial_gTHRFF",
+        "testimonial_hGLmwD",
+        "testimonial_cEJet6"
+      ],
+      "custom_css": [
+        "@media screen and (max-width: 767px) {.testim-section {padding-top: 0.5rem; }}"
+      ],
+      "settings": {
+        "title": "Testimonials",
+        "content": "<p>Our customers come back. Always.<\/p>",
+        "color_scheme": "accent-2",
+        "padding_top": 36,
+        "padding_bottom": 52
+      }
+    },
+    "logo_list_xLBRc7": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_ErRnqB": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_69.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_hHAMqa": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_70.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_fz8dmz": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_71.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_tR94Wp": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_72_1.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_GHxnKR": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_69.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_tdQmKb": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_70.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_D7yjMJ": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_71.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_G74bgz": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_72_1.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_zzyBJM": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_69.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_3QiBPj": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_70.png",
+            "logo_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_ErRnqB",
+        "logo_image_hHAMqa",
+        "logo_image_fz8dmz",
+        "logo_image_tR94Wp",
+        "logo_image_GHxnKR",
+        "logo_image_tdQmKb",
+        "logo_image_D7yjMJ",
+        "logo_image_G74bgz",
+        "logo_image_zzyBJM",
+        "logo_image_3QiBPj"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "accent-1",
+        "title": "AS FEATURED ON",
+        "logo_width": "160px"
+      }
+    },
+    "new_image_with_text_MncFz8": {
+      "type": "new-image-with-text",
+      "blocks": {
+        "heading_4ypaGM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Your Discreet Adult Toy Shop",
+            "heading_size": "h2"
+          }
+        },
+        "text_bd4wjD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We believe in sexual expression and liberation for all. Our wide range of sensual delights reflects our ideals, with premium sex toys available for every sexual orientation, gender and kink.<\/p><p>Looking for Vibrators, dildos, lubes, sexual wellness books, or gift sets? You will find it all here. Don’t know what to buy? Grab a Mystery Box.<\/p><p>Shop online at XOXTOYS and get free delivery on orders $59 and up, 45-day assurance, and round-the-clock customer support.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_3jtEfi": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop All",
+            "button_link": "shopify:\/\/collections\/all-toys",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4ypaGM",
+        "text_bd4wjD",
+        "button_3jtEfi"
+      ],
+      "custom_css": [
+        "a.custom-mistrybox-url {display: none;}",
+        ".new-image-with-text-section .image-with-text__media,.new-image-with-text-section .image-with-text__media img {max-width: 350px; display: flex; align-items: center;}",
+        ".new-image-with-text-section > div {background-image: none; border-radius: 0; padding-top: 0; padding-bottom: 0;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_66.png",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-fbc40351-df4a-4093-ae8e-4778b2860b28",
+        "color_scheme": "scheme-fbc40351-df4a-4093-ae8e-4778b2860b28",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "newsletter_CM9xDh": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_EhNkcK": {
+          "type": "heading",
+          "settings": {
+            "heading": "NEWSLETTER",
+            "heading_size": "h2"
+          }
+        },
+        "paragraph_BRjxNx": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Be the first to know about our most exclusive sales of the year.<\/p>"
+          }
+        },
+        "email_form_i9kV3b": {
+          "type": "email_form",
+          "settings": {
+            "placeholder": "Type here..."
+          }
+        }
+      },
+      "block_order": [
+        "heading_EhNkcK",
+        "paragraph_BRjxNx",
+        "email_form_i9kV3b"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "459eb6f2-e63c-4d78-b3c4-481a11c15131",
+    "5aa4a93a-9542-426d-9b89-522c2960d649",
+    "featured_collection",
+    "latest_multicolumn_xUXjyL",
+    "e9e95b29-3a19-4103-98e9-3d9b6dd26f8e",
+    "new_image_with_text_XL6wCR",
+    "logo_list_PMBYBT",
+    "logo_list_tG9JCm",
+    "new_multicolumn_wgkxdy",
+    "old_multicolumn_RE7TnB",
+    "image_banner_MrT9rJ",
+    "featured_blog_Pd44Ut",
+    "testimonials_idXRNw",
+    "logo_list_xLBRc7",
+    "new_image_with_text_MncFz8",
+    "newsletter_CM9xDh"
   ]
 }

@@ -1,0 +1,2256 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "brand_multicolumn_fqYAtb": {
+      "type": "brand-multicolumn",
+      "blocks": {
+        "column_wjQn8U": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Adam___Eve.png",
+            "title": "",
+            "text": "",
+            "link_label": "Adam & Eve",
+            "link": "shopify:\/\/collections\/adam-eve"
+          }
+        },
+        "column_XNFfjJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Addiction_40ce6879-7bba-41e7-841f-d3d2cbbba63f.png",
+            "title": "",
+            "text": "",
+            "link_label": "Addiction",
+            "link": "shopify:\/\/collections\/addiction"
+          }
+        },
+        "column_WMLYE7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Allure.png",
+            "title": "",
+            "text": "",
+            "link_label": "Allure Lingerie",
+            "link": "shopify:\/\/collections\/allure-lingerie"
+          }
+        },
+        "column_BccUqC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-aneros-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Aneros",
+            "link": "shopify:\/\/collections\/aneros"
+          }
+        },
+        "column_P8yeBq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Aqua_Lube.png",
+            "title": "",
+            "text": "",
+            "link_label": "Aqua Lube",
+            "link": "shopify:\/\/collections\/aqua-lube"
+          }
+        },
+        "column_rTGV9M": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Arcwave_ca9a3e83-9f6f-4aca-8d1b-344ee5016e1d.png",
+            "title": "",
+            "text": "",
+            "link_label": "Arcwave",
+            "link": "shopify:\/\/collections\/arcwave"
+          }
+        },
+        "column_ynkbtd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ass_Thumpers.png",
+            "title": "",
+            "text": "",
+            "link_label": "Ass Thumper",
+            "link": "shopify:\/\/collections\/ass-thumper"
+          }
+        },
+        "column_Tee6Mb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Astroglode.png",
+            "title": "",
+            "text": "",
+            "link_label": "Astroglide",
+            "link": "shopify:\/\/collections\/astroglide"
+          }
+        },
+        "column_NEhdh6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-autoblow-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Autoblow",
+            "link": "shopify:\/\/collections\/autoblow"
+          }
+        },
+        "column_VEtyAN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bathmate_eb0c72f7-4d00-4c12-a7fb-b872d94d3a8d.png",
+            "title": "",
+            "text": "",
+            "link_label": "BathMate",
+            "link": "shopify:\/\/collections\/bathmate"
+          }
+        },
+        "column_7ezQ63": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-bedroombliss-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Bedroom Bliss",
+            "link": "https:\/\/xoxtoys.ca\/collections\/bedroom-bliss"
+          }
+        },
+        "column_JRGWdL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Before___After.png",
+            "title": "",
+            "text": "",
+            "link_label": "Before & After",
+            "link": "shopify:\/\/collections\/before-after"
+          }
+        },
+        "column_mweimA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-bewicked-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "BeWicked",
+            "link": "shopify:\/\/collections\/bewicked"
+          }
+        },
+        "column_7JKn84": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-bijoux-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Bijoux Pour Toi",
+            "link": "shopify:\/\/collections\/bijoux-pour-toi"
+          }
+        },
+        "column_xLgXLy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-bloogasm-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Bloomgasm",
+            "link": "shopify:\/\/collections\/bloomgasm"
+          }
+        },
+        "column_bJUgNB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-blossom-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blossom Organics",
+            "link": "shopify:\/\/collections\/blossom-organics"
+          }
+        },
+        "column_biqN8X": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Blue_Junker.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blue Junker",
+            "link": "shopify:\/\/collections\/blue-junker"
+          }
+        },
+        "column_M7FJAb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Blush_bd3eefdb-d97a-4fbe-a2e1-6f5183d5b64a.png",
+            "title": "",
+            "text": "",
+            "link_label": "Blush",
+            "link": "shopify:\/\/collections\/blush"
+          }
+        },
+        "column_jRWPiR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BMS_Factory.png",
+            "title": "",
+            "text": "",
+            "link_label": "BMS Factory",
+            "link": "shopify:\/\/collections\/bms-factory"
+          }
+        },
+        "column_f3iiTU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-bootysparks-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Booty Sparks",
+            "link": "shopify:\/\/collections\/booty-sparks"
+          }
+        },
+        "column_aHGUrA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Boy_Butter_aa876b12-35aa-483b-885c-635088d5d54d.png",
+            "title": "",
+            "text": "",
+            "link_label": "Boy Butter",
+            "link": "shopify:\/\/collections\/boy-butter"
+          }
+        },
+        "column_68G96e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/B-Vibe_6c73b6c0-8a47-49f9-af00-f9106aa1f259.png",
+            "title": "",
+            "text": "",
+            "link_label": "B-Vibe",
+            "link": "shopify:\/\/collections\/b-vibe"
+          }
+        },
+        "column_9Fby9V": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Books_0a6b6e82-68c3-407c-8196-dbc29b6cc252.png",
+            "title": "",
+            "text": "",
+            "link_label": "Books",
+            "link": "shopify:\/\/collections\/erotic-books"
+          }
+        },
+        "column_zQppaH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Calexotics_9b4da3d0-76e3-4cd8-96bd-a1dd4103eeb1.png",
+            "title": "",
+            "text": "",
+            "link_label": "CALEXOTICS",
+            "link": "shopify:\/\/collections\/calexotics"
+          }
+        },
+        "column_BLk9ex": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CB-X_19963858-3939-45c6-9f69-008d2ac31f8c.png",
+            "title": "",
+            "text": "",
+            "link_label": "CB-X",
+            "link": "shopify:\/\/collections\/cb-x"
+          }
+        },
+        "column_LMPKbc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cg_159efa39-1336-41a6-a69a-36a920644e55.png",
+            "title": "",
+            "text": "",
+            "link_label": "CG",
+            "link": "shopify:\/\/collections\/cg"
+          }
+        },
+        "column_bLMEnH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Charmed_420a2e3c-eec7-48ea-916c-dd5b8ab3a503.png",
+            "title": "",
+            "text": "",
+            "link_label": "Charmed",
+            "link": "shopify:\/\/collections\/charmed"
+          }
+        },
+        "column_yCPdQa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Classic_Brands.png",
+            "title": "",
+            "text": "",
+            "link_label": "Classic Erotica",
+            "link": "shopify:\/\/collections\/classic-erotica"
+          }
+        },
+        "column_BWAKhy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Clean_Stream.png",
+            "title": "",
+            "text": "",
+            "link_label": "Clean Stream",
+            "link": "shopify:\/\/collections\/clean-stream"
+          }
+        },
+        "column_X8XkRU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Colt_36c47d8b-6991-4d33-83ea-a150418a1c91.png",
+            "title": "",
+            "text": "",
+            "link_label": "Colt",
+            "link": "shopify:\/\/collections\/colt"
+          }
+        },
+        "column_3mkYpC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Copulus_2568f1de-8c62-4c3b-81cf-831865d649b1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Copulus",
+            "link": "shopify:\/\/collections\/copulus"
+          }
+        },
+        "column_deVT9Q": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cowgirl_31129c9b-2a58-4cd2-b440-8570d6b24c3d.png",
+            "title": "",
+            "text": "",
+            "link_label": "Cowgirl",
+            "link": "shopify:\/\/collections\/cowgirl"
+          }
+        },
+        "column_X8f7mm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Creative_Conceptions.png",
+            "title": "",
+            "text": "",
+            "link_label": "Creative Conceptions",
+            "link": "shopify:\/\/collections\/creative-conceptions"
+          }
+        },
+        "column_riNJ7q": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Creature_Cocks.png",
+            "title": "",
+            "text": "",
+            "link_label": "Creature Cocks",
+            "link": "shopify:\/\/collections\/creature-cocks"
+          }
+        },
+        "column_TLHnTC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CumCum_Lube.png",
+            "title": "",
+            "text": "",
+            "link_label": "CumCum Lube",
+            "link": "shopify:\/\/collections\/cumcum-lube"
+          }
+        },
+        "column_TMNqme": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-dame-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Dame",
+            "link": "shopify:\/\/collections\/dame"
+          }
+        },
+        "column_tzMMft": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/DD_Stacks.png",
+            "title": "",
+            "text": "",
+            "link_label": "DD Stacks",
+            "link": "shopify:\/\/collections\/dd-stacks"
+          }
+        },
+        "column_XeGxGr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Deeva_745a84cc-3994-4e84-9ab3-f1dfbc1ae458.png",
+            "title": "",
+            "text": "",
+            "link_label": "DeeVa",
+            "link": "shopify:\/\/collections\/deeva"
+          }
+        },
+        "column_T6tKy8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Deia_b4337c25-0dda-4a3c-aedb-13a934defcf0.png",
+            "title": "",
+            "text": "",
+            "link_label": "Deia",
+            "link": "shopify:\/\/collections\/deia"
+          }
+        },
+        "column_PqWnXc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Doc_Johnson.png",
+            "title": "",
+            "text": "",
+            "link_label": "Doc Johnson",
+            "link": "shopify:\/\/collections\/doc-johnson"
+          }
+        },
+        "column_Kd9XPk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Dorcel_009e73c2-583f-4dbd-a6f1-c630fab1d1bb.png",
+            "title": "",
+            "text": "",
+            "link_label": "Dorcel",
+            "link": "shopify:\/\/collections\/dorcel"
+          }
+        },
+        "column_RdMKKJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-doxy-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Doxy",
+            "link": "shopify:\/\/collections\/doxy"
+          }
+        },
+        "column_Ekztyp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Drywell_c029a27c-ffe3-4250-99a3-18cffb1379ed.png",
+            "title": "",
+            "text": "",
+            "link_label": "Drywell",
+            "link": "shopify:\/\/collections\/drywell"
+          }
+        },
+        "column_YaCz9d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-durazest-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Durazest",
+            "link": "shopify:\/\/collections\/durazest"
+          }
+        },
+        "column_mBaBw4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Durex_fc746238-2ea4-4603-96d7-b8607f3c0507.png",
+            "title": "",
+            "text": "",
+            "link_label": "Durex",
+            "link": "shopify:\/\/collections\/durex"
+          }
+        },
+        "column_QM48nd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-earthlybody-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Earthly Body",
+            "link": "shopify:\/\/collections\/earthly-body"
+          }
+        },
+        "column_Bp4PHb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Elbow_Grease.png",
+            "title": "",
+            "text": "",
+            "link_label": "Elbow Grease",
+            "link": "shopify:\/\/collections\/elbow-grease"
+          }
+        },
+        "column_BpKzWJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Emojibator_660db2c7-548e-4eaf-be0c-bbc8dc3b7df4.png",
+            "title": "",
+            "text": "",
+            "link_label": "Emojibator",
+            "link": "shopify:\/\/collections\/emojibator"
+          }
+        }
+      },
+      "block_order": [
+        "column_wjQn8U",
+        "column_XNFfjJ",
+        "column_WMLYE7",
+        "column_BccUqC",
+        "column_P8yeBq",
+        "column_rTGV9M",
+        "column_ynkbtd",
+        "column_Tee6Mb",
+        "column_NEhdh6",
+        "column_VEtyAN",
+        "column_7ezQ63",
+        "column_JRGWdL",
+        "column_mweimA",
+        "column_7JKn84",
+        "column_xLgXLy",
+        "column_bJUgNB",
+        "column_biqN8X",
+        "column_M7FJAb",
+        "column_jRWPiR",
+        "column_f3iiTU",
+        "column_aHGUrA",
+        "column_68G96e",
+        "column_9Fby9V",
+        "column_zQppaH",
+        "column_BLk9ex",
+        "column_LMPKbc",
+        "column_bLMEnH",
+        "column_yCPdQa",
+        "column_BWAKhy",
+        "column_X8XkRU",
+        "column_3mkYpC",
+        "column_deVT9Q",
+        "column_X8f7mm",
+        "column_riNJ7q",
+        "column_TLHnTC",
+        "column_TMNqme",
+        "column_tzMMft",
+        "column_XeGxGr",
+        "column_T6tKy8",
+        "column_PqWnXc",
+        "column_Kd9XPk",
+        "column_RdMKKJ",
+        "column_Ekztyp",
+        "column_YaCz9d",
+        "column_mBaBw4",
+        "column_QM48nd",
+        "column_Bp4PHb",
+        "column_BpKzWJ"
+      ],
+      "custom_css": [
+        ".multicolumn.background-primary .multicolumn-card {background: transparent;}",
+        ".multicolumn-card-spacing {margin: 0; padding: 0;}",
+        "li.multicolumn-list__item {padding: 0.5rem;}",
+        ".my-featured-title h2.title {background: #e8e1f2;}",
+        ".multicolumn-card__info .icon-wrap {display: none;}"
+      ],
+      "settings": {
+        "title": "Brands",
+        "heading_size": "h2",
+        "description": "<p>more exploration. more excitement.<\/p>",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-a0443abe-8469-4fd9-a2cc-dc750c3fa914",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "brand_multicolumn_PxFgNh": {
+      "type": "brand-multicolumn",
+      "blocks": {
+        "column_UWmV3r": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Empire_Labs.png",
+            "title": "",
+            "text": "",
+            "link_label": "Empire Labs",
+            "link": "shopify:\/\/collections\/empire-labs"
+          }
+        },
+        "column_ib6yUc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Empowered_Products.png",
+            "title": "",
+            "text": "",
+            "link_label": "Empowered Products",
+            "link": "shopify:\/\/collections\/empowered-products"
+          }
+        },
+        "column_m6KHjU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Evolved_6c5ac75c-cf26-49a0-878a-07245b73ce2a.png",
+            "title": "",
+            "text": "",
+            "link_label": "Evolved",
+            "link": "shopify:\/\/collections\/evolved"
+          }
+        },
+        "column_WaazpD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Evolved_6c5ac75c-cf26-49a0-878a-07245b73ce2a.png",
+            "title": "",
+            "text": "",
+            "link_label": "Evolved Novelties",
+            "link": "shopify:\/\/collections\/evolved-novelties"
+          }
+        },
+        "column_fK7376": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Exsens_611f5034-1baf-4d76-ac53-8713631e9c4a.png",
+            "title": "",
+            "text": "",
+            "link_label": "Exsens",
+            "link": "shopify:\/\/collections\/exsens"
+          }
+        },
+        "column_BPzyny": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Eye_of_Love.png",
+            "title": "",
+            "text": "",
+            "link_label": "EYE OF LOVE",
+            "link": "shopify:\/\/collections\/eye-of-love"
+          }
+        },
+        "column_6bMtx9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fashion_Secret.png",
+            "title": "",
+            "text": "",
+            "link_label": "Fashion Secret",
+            "link": "shopify:\/\/collections\/fashion-secret"
+          }
+        },
+        "column_UGBHjx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-fc2-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "FC2",
+            "link": "https:\/\/xoxtoys.ca\/collections\/fc2"
+          }
+        },
+        "column_dhkRYz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Femme_Flexor.png",
+            "title": "",
+            "text": "",
+            "link_label": "Femme Flexor",
+            "link": "shopify:\/\/collections\/femme-flexor"
+          }
+        },
+        "column_KA6Mhd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fetish_Tentation.png",
+            "title": "",
+            "text": "",
+            "link_label": "Fetish Tentation",
+            "link": "shopify:\/\/collections\/fetish-tentation"
+          }
+        },
+        "column_qyGAUU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fetissimo_6a6d9fa1-ced6-4076-8414-ec376e523a30.png",
+            "title": "",
+            "text": "",
+            "link_label": "Fetissimo",
+            "link": "shopify:\/\/collections\/fetissimo"
+          }
+        },
+        "column_4dWwzr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fifty_Shades_of_Grey_01208a5b-135d-4e70-af6d-1b50c65cb885.png",
+            "title": "",
+            "text": "",
+            "link_label": "Fifty Shades Of Grey",
+            "link": "shopify:\/\/collections\/fifty-shades-of-grey"
+          }
+        },
+        "column_eHKw7X": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fleshlight_0dbd9858-3b53-4f30-b5b5-9cf47bd03d39.png",
+            "title": "",
+            "text": "",
+            "link_label": "Fleshlight",
+            "link": "shopify:\/\/collections\/fleshlight"
+          }
+        },
+        "column_PnwdYp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Floravi_f57c428e-1554-46c2-8ea0-c4f35ca54a7e.png",
+            "title": "",
+            "text": "",
+            "link_label": "Floravi",
+            "link": "shopify:\/\/collections\/floravi"
+          }
+        },
+        "column_qxHTPp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Foria_a2bc6f6f-dcee-4110-bec4-23c873dc541b.png",
+            "title": "",
+            "text": "",
+            "link_label": "Foria",
+            "link": "shopify:\/\/collections\/foria"
+          }
+        },
+        "column_rJ6eaA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-fuckwater-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "FuckWater",
+            "link": "shopify:\/\/collections\/fuckwater"
+          }
+        },
+        "column_VbMXQj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Forta_22b58309-2fd3-4210-b754-8d48b986c047.png",
+            "title": "",
+            "text": "",
+            "link_label": "Forta",
+            "link": "shopify:\/\/collections\/forta"
+          }
+        },
+        "column_kz9TUx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-funfactory-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Fun Factory",
+            "link": "shopify:\/\/collections\/fun-factory"
+          }
+        },
+        "column_d9PkQY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fuzu_2857114a-a320-4211-95e1-6400299651f6.png",
+            "title": "",
+            "text": "",
+            "link_label": "Fuzu",
+            "link": "shopify:\/\/collections\/fuzu"
+          }
+        },
+        "column_MhgUWn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Gender_X.png",
+            "title": "",
+            "text": "",
+            "link_label": "Gender X",
+            "link": "shopify:\/\/collections\/gender-x"
+          }
+        },
+        "column_B3TCjw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Glyde_4eb16fb4-28c7-4ca0-ad17-9406c152e3bd.png",
+            "title": "",
+            "text": "",
+            "link_label": "Glyde",
+            "link": "shopify:\/\/collections\/glyde"
+          }
+        },
+        "column_BVfe8a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/GUYPLAY_c50a0feb-56c9-4979-af7d-ead166f573a1.png",
+            "title": "",
+            "text": "",
+            "link_label": "GUYPLAY",
+            "link": "shopify:\/\/collections\/guyplay"
+          }
+        },
+        "column_88cyEW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Happy_Rabbit.png",
+            "title": "",
+            "text": "",
+            "link_label": "Happy Rabbit",
+            "link": "shopify:\/\/collections\/happy-rabbit"
+          }
+        },
+        "column_kMyTNU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hidden_Eden.png",
+            "title": "",
+            "text": "",
+            "link_label": "Hidden Eden",
+            "link": "shopify:\/\/collections\/hidden-eden"
+          }
+        },
+        "column_zCBXTF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-highonlove-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "High On Love",
+            "link": "shopify:\/\/collections\/high-on-love"
+          }
+        },
+        "column_i6m3pV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Honey_Play_Box.png",
+            "title": "",
+            "text": "",
+            "link_label": "Honey Play Box",
+            "link": "shopify:\/\/collections\/honey-play-box"
+          }
+        },
+        "column_rndULX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hot_Octopuss_07c51e60-aa56-4caf-934b-1c1eb8d1e842.png",
+            "title": "",
+            "text": "",
+            "link_label": "Hot Octopuss",
+            "link": "shopify:\/\/collections\/hot-octopuss"
+          }
+        },
+        "column_6RpqcK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hott_Products_a7aa133a-96d3-4dc8-96f8-182b1e8d218c.png",
+            "title": "",
+            "text": "",
+            "link_label": "Hott Products",
+            "link": "shopify:\/\/collections\/hott-products"
+          }
+        },
+        "column_ekXnWP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hunkyjunk_8cbc389f-c33d-4de5-af51-9ea702a462c9.png",
+            "title": "",
+            "text": "",
+            "link_label": "Hunkyjunk",
+            "link": "shopify:\/\/collections\/hunkyjunk"
+          }
+        },
+        "column_NLNBnJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-id-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "ID Lubricants",
+            "link": "shopify:\/\/collections\/id-lubricants"
+          }
+        },
+        "column_HQQiLm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Intimate_Earth_d4d60b86-1260-4345-97bc-8cac795c2b67.png",
+            "title": "",
+            "text": "",
+            "link_label": "Intimate Earth",
+            "link": "shopify:\/\/collections\/intimate-earth"
+          }
+        },
+        "column_7YTYri": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Intimina_1defb640-dbe1-43a4-bce8-485d9b64e472.png",
+            "title": "",
+            "text": "",
+            "link_label": "Intimina",
+            "link": "shopify:\/\/collections\/intimina"
+          }
+        },
+        "column_LFhRYC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Je_Joue_dfb54f43-bc58-4c67-bd1f-14fa61e6c6b9.png",
+            "title": "",
+            "text": "",
+            "link_label": "Je Joue",
+            "link": "shopify:\/\/collections\/je-joue"
+          }
+        },
+        "column_yDNHnq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jelique_Products.png",
+            "title": "",
+            "text": "",
+            "link_label": "Jelique Products",
+            "link": "shopify:\/\/collections\/jelique-products"
+          }
+        },
+        "column_UYEbKp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jes_Extender.png",
+            "title": "",
+            "text": "",
+            "link_label": "Jes-Extender",
+            "link": "shopify:\/\/collections\/jes-extender"
+          }
+        },
+        "column_TcKHg4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Jesse_Jane.png",
+            "title": "",
+            "text": "",
+            "link_label": "Jesse Jane",
+            "link": "shopify:\/\/collections\/jesse-jane"
+          }
+        },
+        "column_WgTP7c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-jimmyjane-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "JimmyJane",
+            "link": "https:\/\/xoxtoys.ca\/collections\/jimmyjane"
+          }
+        },
+        "column_aDUtjM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Joyboxx_34c0c528-9079-4a21-bf83-29b307ee95a7.png",
+            "title": "",
+            "text": "",
+            "link_label": "Joyboxx",
+            "link": "shopify:\/\/collections\/joyboxx"
+          }
+        },
+        "column_bcbbLf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-kamasutra-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Kama Sutra",
+            "link": "shopify:\/\/collections\/kama-sutra"
+          }
+        },
+        "column_rG7RrD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kheper_Games_e8f4c0e5-30cb-40e6-97f9-f6a0bc54ecd1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Kheper Games",
+            "link": "shopify:\/\/collections\/kheper-games"
+          }
+        },
+        "column_TtfGEK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-kiiroo-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Kiiroo",
+            "link": "shopify:\/\/collections\/kiiroo"
+          }
+        },
+        "column_tGeKMq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kimono_c483b651-e431-4bd1-a3f9-b392f3a53d7d.png",
+            "title": "",
+            "text": "",
+            "link_label": "Kimono",
+            "link": "shopify:\/\/collections\/kimono"
+          }
+        },
+        "column_XMfjK3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kixies_2dc5de2a-9554-4714-9e0e-2fb252ef006a.png",
+            "title": "",
+            "text": "",
+            "link_label": "Kix'ies",
+            "link": "shopify:\/\/collections\/kixies"
+          }
+        },
+        "column_HM7xfy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-lewand-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Le Wand",
+            "link": "shopify:\/\/collections\/le-wand"
+          }
+        },
+        "column_67Hbgz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-lelo-titlecard-bigger_76592c81-a540-4e81-aff7-aaf92e50fae2.png",
+            "title": "",
+            "text": "",
+            "link_label": "LELO",
+            "link": "shopify:\/\/collections\/lelo"
+          }
+        },
+        "column_D3HMGg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-liberator-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Liberator",
+            "link": "shopify:\/\/collections\/liberator"
+          }
+        },
+        "column_TL8nt7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Life_Choice.png",
+            "title": "",
+            "text": "",
+            "link_label": "Life Choice",
+            "link": "shopify:\/\/collections\/life-choice"
+          }
+        },
+        "column_RqNd6f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/LifeStyles_e7bca7f9-083e-4a3e-92a4-0af82522c56a.png",
+            "title": "",
+            "text": "",
+            "link_label": "LifeStyles",
+            "link": "shopify:\/\/collections\/lifestyles"
+          }
+        },
+        "column_Xg7k6w": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fifty-shades-freed_1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Fifty Shades Freed",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_UWmV3r",
+        "column_ib6yUc",
+        "column_m6KHjU",
+        "column_WaazpD",
+        "column_fK7376",
+        "column_BPzyny",
+        "column_6bMtx9",
+        "column_UGBHjx",
+        "column_dhkRYz",
+        "column_KA6Mhd",
+        "column_qyGAUU",
+        "column_4dWwzr",
+        "column_eHKw7X",
+        "column_PnwdYp",
+        "column_qxHTPp",
+        "column_rJ6eaA",
+        "column_VbMXQj",
+        "column_kz9TUx",
+        "column_d9PkQY",
+        "column_MhgUWn",
+        "column_B3TCjw",
+        "column_BVfe8a",
+        "column_88cyEW",
+        "column_kMyTNU",
+        "column_zCBXTF",
+        "column_i6m3pV",
+        "column_rndULX",
+        "column_6RpqcK",
+        "column_ekXnWP",
+        "column_NLNBnJ",
+        "column_HQQiLm",
+        "column_7YTYri",
+        "column_LFhRYC",
+        "column_yDNHnq",
+        "column_UYEbKp",
+        "column_TcKHg4",
+        "column_WgTP7c",
+        "column_aDUtjM",
+        "column_bcbbLf",
+        "column_rG7RrD",
+        "column_TtfGEK",
+        "column_tGeKMq",
+        "column_XMfjK3",
+        "column_HM7xfy",
+        "column_67Hbgz",
+        "column_D3HMGg",
+        "column_TL8nt7",
+        "column_RqNd6f",
+        "column_Xg7k6w"
+      ],
+      "custom_css": [
+        ".multicolumn.background-primary .multicolumn-card {background: transparent;}",
+        ".multicolumn-card-spacing {margin: 0; padding: 0;}",
+        "li.multicolumn-list__item {padding: 0.5rem;}",
+        ".my-featured-title h2.title {background: #e8e1f2;}",
+        ".multicolumn-card__info .icon-wrap {display: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-a0443abe-8469-4fd9-a2cc-dc750c3fa914",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "brand_multicolumn_HV78dR": {
+      "type": "brand-multicolumn",
+      "blocks": {
+        "column_3gPAg4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-lipbalm-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Lip Balm",
+            "link": "shopify:\/\/collections\/lip-balm"
+          }
+        },
+        "column_y6RWqV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Liquid_Silk.png",
+            "title": "",
+            "text": "",
+            "link_label": "Liquid Silk",
+            "link": "shopify:\/\/collections\/liquid-silk"
+          }
+        },
+        "column_3kPbDV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Little_Genie.png",
+            "title": "",
+            "text": "",
+            "link_label": "Little Genie",
+            "link": "shopify:\/\/collections\/little-genie"
+          }
+        },
+        "column_aANAbw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lora_DiCarlo.png",
+            "title": "",
+            "text": "",
+            "link_label": "Lora DiCarlo",
+            "link": "shopify:\/\/collections\/lora-dicarlo"
+          }
+        },
+        "column_MHFxj8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Love_To_Love.png",
+            "title": "",
+            "text": "",
+            "link_label": "Love To Love",
+            "link": "shopify:\/\/collections\/love-to-love"
+          }
+        },
+        "column_nHRaDN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lovebotz_a5df7e19-9ef6-4ffc-ac3e-e0447ef102c1.png",
+            "title": "",
+            "text": "",
+            "link_label": "Lovebotz",
+            "link": "shopify:\/\/collections\/lovebotz"
+          }
+        },
+        "column_JMHiVG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lovense_1bc8d807-1f9a-4f27-b724-a48102712db8.png",
+            "title": "",
+            "text": "",
+            "link_label": "Lovense",
+            "link": "shopify:\/\/collections\/lovense"
+          }
+        },
+        "column_NcR7PW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-magicwand-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Magic Wand",
+            "link": "shopify:\/\/collections\/magic-wand"
+          }
+        },
+        "column_GLcBq9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MaleEdge_d29cbae1-221a-4717-aac4-9b4cbdaf21eb.png",
+            "title": "",
+            "text": "",
+            "link_label": "MaleEdge",
+            "link": "shopify:\/\/collections\/maleedge"
+          }
+        },
+        "column_eUz9tw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-master-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Master Series",
+            "link": "shopify:\/\/collections\/master-series"
+          }
+        },
+        "column_wgCNdM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-natalie-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Natalie's Toybox",
+            "link": "https:\/\/xoxtoys.ca\/collections\/natalies-toybox"
+          }
+        },
+        "column_mCf7JK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/My_First.png",
+            "title": "",
+            "text": "",
+            "link_label": "My First",
+            "link": "shopify:\/\/collections\/my-first"
+          }
+        },
+        "column_pygLdr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nexus_9a1dfe13-f799-462d-b9ea-878ffd81512d.png",
+            "title": "",
+            "text": "",
+            "link_label": "Nexus",
+            "link": "shopify:\/\/collections\/nexus"
+          }
+        },
+        "column_mPQJAy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-nobu-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "NOBÜ",
+            "link": "shopify:\/\/collections\/nobu"
+          }
+        },
+        "column_rH8b6h": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NS_Novelties_1a653976-0b3b-45bb-8fb9-5702ae4f9c19.png",
+            "title": "",
+            "text": "",
+            "link_label": "NS Novelties",
+            "link": "shopify:\/\/collections\/ns-novelties"
+          }
+        },
+        "column_HM8Qqk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-nuru-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Nuru Play",
+            "link": "shopify:\/\/collections\/nuru-play"
+          }
+        },
+        "column_V6ndRB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nu_Sensuelle_46f6ff21-0146-4d00-82d7-83d9d9f4b9c8.png",
+            "title": "",
+            "text": "",
+            "link_label": "Nü Sensuelle",
+            "link": "shopify:\/\/collections\/nu-sensuelle-1"
+          }
+        },
+        "column_Qx8fKg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Obsessive_Lingerie_1960202d-5e93-48b9-962d-629e74012ffd.png",
+            "title": "",
+            "text": "",
+            "link_label": "Obsessive Lingerie",
+            "link": "shopify:\/\/collections\/obsessive-lingerie"
+          }
+        },
+        "column_F4mBEx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Oh_La_La_Cheri.png",
+            "title": "",
+            "text": "",
+            "link_label": "Oh La La Cheri",
+            "link": "shopify:\/\/collections\/oh-la-la-cheri"
+          }
+        },
+        "column_BytHnY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/OhMiBod_89ebd2fa-d727-4d0c-867b-0c7a9f29c333.png",
+            "title": "",
+            "text": "",
+            "link_label": "Ohmibod",
+            "link": "shopify:\/\/collections\/ohmibod"
+          }
+        },
+        "column_FAbiXV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Orgie_eb78f910-4155-469a-af5c-67c823e38bad.png",
+            "title": "",
+            "text": "",
+            "link_label": "Orgie",
+            "link": "shopify:\/\/collections\/orgie"
+          }
+        },
+        "column_kjPcYx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Oxballs_4d24e546-2ebf-489e-9d73-2242af61612a.png",
+            "title": "",
+            "text": "",
+            "link_label": "Oxballs",
+            "link": "shopify:\/\/collections\/oxballs"
+          }
+        },
+        "column_yePfWc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ozze_Creations_099a3057-b654-4208-8d9c-bd1f80b0a723.png",
+            "title": "",
+            "text": "",
+            "link_label": "Ozze Creations",
+            "link": "shopify:\/\/collections\/ozze-creations"
+          }
+        },
+        "column_Wcgxf7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Peniform_97f9800d-8863-45ac-9956-5299426b8959.png",
+            "title": "",
+            "text": "",
+            "link_label": "Peniform",
+            "link": "shopify:\/\/collections\/peniform"
+          }
+        },
+        "column_M4nFzi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Penthouse_11aec849-dc12-4e6f-a141-df4503178ad0.png",
+            "title": "",
+            "text": "",
+            "link_label": "Penthouse",
+            "link": "shopify:\/\/collections\/penthouse"
+          }
+        },
+        "column_gQAcGw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PerfectFit_e9e9b31a-8087-4cfd-aedb-a54e459289e5.png",
+            "title": "",
+            "text": "",
+            "link_label": "PerfectFit",
+            "link": "shopify:\/\/collections\/perfectfit"
+          }
+        },
+        "column_MLTG9e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PicoBong_67020f97-35bd-469d-87c1-5530551d1b02.png",
+            "title": "",
+            "text": "",
+            "link_label": "PicoBong",
+            "link": "shopify:\/\/collections\/picobong"
+          }
+        },
+        "column_MFFicT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-pipdream-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Pipedream Products",
+            "link": "shopify:\/\/collections\/pipedream-products"
+          }
+        },
+        "column_pAapkz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Pjur_d3bfda31-15d8-4829-8362-8e899daf08e5.png",
+            "title": "",
+            "text": "",
+            "link_label": "Pjur",
+            "link": "shopify:\/\/collections\/pjur"
+          }
+        },
+        "column_XjCeJg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Play_Wiv_Me.png",
+            "title": "",
+            "text": "",
+            "link_label": "Play Wiv Me",
+            "link": "shopify:\/\/collections\/play-wiv-me"
+          }
+        },
+        "column_mM74Tf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Probe_13fb1030-f55d-4e33-8542-43fb36e14135.png",
+            "title": "",
+            "text": "",
+            "link_label": "Probe",
+            "link": "shopify:\/\/collections\/probe-lubricants"
+          }
+        },
+        "column_MQbr46": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-puissante-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Puissante",
+            "link": "shopify:\/\/collections\/puissante"
+          }
+        },
+        "column_VTraEw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-pureinstinct-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Pure Instinct",
+            "link": "shopify:\/\/collections\/pure-instinct"
+          }
+        },
+        "column_Qb7KfY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-rockcandy-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Rock Candy",
+            "link": "shopify:\/\/collections\/rock-candy"
+          }
+        },
+        "column_iQrfR7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-rocksoff-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Rocks Off",
+            "link": "shopify:\/\/collections\/rocks-off"
+          }
+        },
+        "column_VWEzqL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Roma.png",
+            "title": "",
+            "text": "",
+            "link_label": "Roma Costume",
+            "link": "shopify:\/\/collections\/roma-costume"
+          }
+        },
+        "column_B6EWrF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Romp_b8450649-6a7d-45d4-a1a2-28ce14917f50.png",
+            "title": "",
+            "text": "",
+            "link_label": "ROMP",
+            "link": "shopify:\/\/collections\/romp"
+          }
+        },
+        "column_QVMEXt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-romp-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Rouge",
+            "link": "shopify:\/\/collections\/rouge"
+          }
+        },
+        "column_XJq7ni": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Satisfyer_542a1abd-e4b9-4023-ab8c-af37cc442e00.png",
+            "title": "",
+            "text": "",
+            "link_label": "Satisfyer",
+            "link": "shopify:\/\/collections\/satisfyer"
+          }
+        },
+        "column_83eain": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screaming_O.png",
+            "title": "",
+            "text": "",
+            "link_label": "Screaming O",
+            "link": "shopify:\/\/collections\/screaming-o"
+          }
+        },
+        "column_zMDFWJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sensuva_272f195d-9005-4348-883b-5e7befbfa6f4.png",
+            "title": "",
+            "text": "",
+            "link_label": "Sensuva",
+            "link": "shopify:\/\/collections\/sensuva"
+          }
+        },
+        "column_zMxcLU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sexual_Desires.png",
+            "title": "",
+            "text": "",
+            "link_label": "Sexual Desires",
+            "link": "shopify:\/\/collections\/sexual-desires"
+          }
+        },
+        "column_imCaM8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sexy_living.png",
+            "title": "",
+            "text": "",
+            "link_label": "Sexy Living",
+            "link": "shopify:\/\/collections\/sexy-living"
+          }
+        },
+        "column_U7jXJg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shegasm_c58d9c49-456c-4fec-bd49-5fecc04099bf.png",
+            "title": "",
+            "text": "",
+            "link_label": "Shegasm",
+            "link": "shopify:\/\/collections\/shegasm"
+          }
+        },
+        "column_wqdQ64": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shibari_34b3de5c-d84b-4d40-899e-aa01553c6af9.png",
+            "title": "",
+            "text": "",
+            "link_label": "Shibari",
+            "link": "shopify:\/\/collections\/shibari"
+          }
+        },
+        "column_EYd9wV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shots_b3e5da42-6aba-4607-8faf-faffb14c7abd.png",
+            "title": "",
+            "text": "",
+            "link_label": "Shots",
+            "link": "shopify:\/\/collections\/shots"
+          }
+        },
+        "column_43jkEd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Shunga_f61d864f-f775-4e78-8b12-09ef4230fe43.png",
+            "title": "",
+            "text": "",
+            "link_label": "Shunga",
+            "link": "shopify:\/\/collections\/shunga"
+          }
+        },
+        "column_fwgtjk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Simply_Sexy.png",
+            "title": "",
+            "text": "",
+            "link_label": "Simply Sexy",
+            "link": "shopify:\/\/collections\/simply-sexy"
+          }
+        }
+      },
+      "block_order": [
+        "column_3gPAg4",
+        "column_y6RWqV",
+        "column_3kPbDV",
+        "column_aANAbw",
+        "column_MHFxj8",
+        "column_nHRaDN",
+        "column_JMHiVG",
+        "column_NcR7PW",
+        "column_GLcBq9",
+        "column_eUz9tw",
+        "column_wgCNdM",
+        "column_mCf7JK",
+        "column_pygLdr",
+        "column_mPQJAy",
+        "column_rH8b6h",
+        "column_HM8Qqk",
+        "column_V6ndRB",
+        "column_Qx8fKg",
+        "column_F4mBEx",
+        "column_BytHnY",
+        "column_FAbiXV",
+        "column_kjPcYx",
+        "column_yePfWc",
+        "column_Wcgxf7",
+        "column_M4nFzi",
+        "column_gQAcGw",
+        "column_MLTG9e",
+        "column_MFFicT",
+        "column_pAapkz",
+        "column_XjCeJg",
+        "column_mM74Tf",
+        "column_MQbr46",
+        "column_VTraEw",
+        "column_Qb7KfY",
+        "column_iQrfR7",
+        "column_VWEzqL",
+        "column_B6EWrF",
+        "column_QVMEXt",
+        "column_XJq7ni",
+        "column_83eain",
+        "column_zMDFWJ",
+        "column_zMxcLU",
+        "column_imCaM8",
+        "column_U7jXJg",
+        "column_wqdQ64",
+        "column_EYd9wV",
+        "column_43jkEd",
+        "column_fwgtjk"
+      ],
+      "custom_css": [
+        ".multicolumn.background-primary .multicolumn-card {background: transparent;}",
+        ".multicolumn-card-spacing {margin: 0; padding: 0;}",
+        "li.multicolumn-list__item {padding: 0.5rem;}",
+        ".my-featured-title h2.title {background: #e8e1f2;}",
+        ".multicolumn-card__info .icon-wrap {display: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-a0443abe-8469-4fd9-a2cc-dc750c3fa914",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    },
+    "brand_multicolumn_eXphgL": {
+      "type": "brand-multicolumn",
+      "blocks": {
+        "column_hiTmi6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Slippery_Stuff_6028b6a4-c5c0-4bf6-886a-86aa23cbd396.png",
+            "title": "",
+            "text": "",
+            "link_label": "Slippery Stuff",
+            "link": "https:\/\/xoxtoys.ca\/collections\/slippery-stuff"
+          }
+        },
+        "column_hm8B77": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-sliquid-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Sliquid",
+            "link": "shopify:\/\/collections\/sliquid"
+          }
+        },
+        "column_LL9Wq7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Spartacus_ff91758c-585a-4e2e-98ac-f5f22f961c2c.png",
+            "title": "",
+            "text": "",
+            "link_label": "Spartacus",
+            "link": "shopify:\/\/collections\/spartacus"
+          }
+        },
+        "column_JpmE4B": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sportsheets_0566b815-1964-469c-a704-94a446fa257e.png",
+            "title": "",
+            "text": "",
+            "link_label": "Sportsheets",
+            "link": "shopify:\/\/collections\/sportsheets"
+          }
+        },
+        "column_B7xPNe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Stag_9000.png",
+            "title": "",
+            "text": "",
+            "link_label": "Stag 9000",
+            "link": "shopify:\/\/collections\/stag-9000"
+          }
+        },
+        "column_3jyxNT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-straponme-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Strap On Me",
+            "link": "shopify:\/\/collections\/strap-on-me"
+          }
+        },
+        "column_WrPkiA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Strap_U.png",
+            "title": "",
+            "text": "",
+            "link_label": "Strap U",
+            "link": "shopify:\/\/collections\/strap-u"
+          }
+        },
+        "column_BJaLfN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Strict_7df77b95-41cc-45dc-a6d5-a7908408fadb.png",
+            "title": "",
+            "text": "",
+            "link_label": "Strict",
+            "link": "shopify:\/\/collections\/strict"
+          }
+        },
+        "column_JxCQ7R": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-strictleather-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Strict Leather",
+            "link": "\/collections\/vendors?q=Strict%20Leather"
+          }
+        },
+        "column_cxYPJW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-stud100-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Stud 100",
+            "link": "shopify:\/\/collections\/stud-100"
+          }
+        },
+        "column_eWCP9p": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Sutil_e4f33fd2-bf27-4fff-ac3a-dd4f049177da.png",
+            "title": "",
+            "text": "",
+            "link_label": "Sutil",
+            "link": "shopify:\/\/collections\/sutil"
+          }
+        },
+        "column_JNUjCk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-svakom-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Svakom",
+            "link": "shopify:\/\/collections\/svakom"
+          }
+        },
+        "column_fwcG4F": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-swiss-navy-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Swiss Navy",
+            "link": "shopify:\/\/collections\/swiss-navy"
+          }
+        },
+        "column_9DzKqa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/System_JO.png",
+            "title": "",
+            "text": "",
+            "link_label": "System JO",
+            "link": "shopify:\/\/collections\/system-jo"
+          }
+        },
+        "column_BmP8XT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tailz_0688a7f8-e632-44e4-95c9-785ea9ea0033.png",
+            "title": "",
+            "text": "",
+            "link_label": "Tailz",
+            "link": "shopify:\/\/collections\/tailz"
+          }
+        },
+        "column_NzrM46": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-tantus-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Tantus",
+            "link": "shopify:\/\/collections\/tantus"
+          }
+        },
+        "column_QpF6Af": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-tp-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Tease & Please",
+            "link": "shopify:\/\/collections\/tease-please"
+          }
+        },
+        "column_eEMbnF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Tenga_ba8c4c9c-1be1-470c-8a1c-75e81e89b836.png",
+            "title": "",
+            "text": "",
+            "link_label": "Tenga",
+            "link": "shopify:\/\/collections\/tenga"
+          }
+        },
+        "column_7B97KM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-malerose-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "The Male Rose",
+            "link": "shopify:\/\/collections\/the-male-rose"
+          }
+        },
+        "column_3iaaeY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Thump_It.png",
+            "title": "",
+            "text": "",
+            "link_label": "Thump It",
+            "link": "shopify:\/\/collections\/thump-it"
+          }
+        },
+        "column_hFNWM4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Topco_Sales.png",
+            "title": "",
+            "text": "",
+            "link_label": "Topco Sales",
+            "link": "shopify:\/\/collections\/topco-sales"
+          }
+        },
+        "column_VWTmxj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-tracy-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Tracy's Dog",
+            "link": "shopify:\/\/collections\/tracys-dog"
+          }
+        },
+        "column_KLaMmw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-trinity-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Trinity Vibes",
+            "link": "\/collections\/vendors?q=Trinity%20Vibes"
+          }
+        },
+        "column_8ztBgC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-trojan-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Trojan",
+            "link": "shopify:\/\/collections\/trojan"
+          }
+        },
+        "column_dWAzBg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Turn_On.png",
+            "title": "",
+            "text": "",
+            "link_label": "Turn On",
+            "link": "shopify:\/\/collections\/turn-on"
+          }
+        },
+        "column_ndin7d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-uberlube-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Uberlube",
+            "link": "shopify:\/\/collections\/uberlube"
+          }
+        },
+        "column_RWPtM8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-viben-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Viben",
+            "link": "shopify:\/\/collections\/viben"
+          }
+        },
+        "column_ryaRwN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-vibratex-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Vibratex",
+            "link": "shopify:\/\/collections\/vibratex"
+          }
+        },
+        "column_exjez9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-vivilo-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Vivilo",
+            "link": "shopify:\/\/collections\/vivilo"
+          }
+        },
+        "column_RARMYX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Voodoo_2937f0a4-7979-441b-974e-d8d3aad70713.png",
+            "title": "",
+            "text": "",
+            "link_label": "Voodoo",
+            "link": "shopify:\/\/collections\/voodoo"
+          }
+        },
+        "column_j78iUa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vush_6d5de43f-68fb-4530-9c78-3a88a515b504.png",
+            "title": "",
+            "text": "",
+            "link_label": "Vush",
+            "link": "shopify:\/\/collections\/vush"
+          }
+        },
+        "column_AKx44Y": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-wevibe-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "We-Vibe",
+            "link": "shopify:\/\/collections\/we-vibe"
+          }
+        },
+        "column_8eDRNq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-wet-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Wet",
+            "link": "shopify:\/\/collections\/wet"
+          }
+        },
+        "column_Q7ebz4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-wicked-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Wicked",
+            "link": "shopify:\/\/collections\/wicked"
+          }
+        },
+        "column_97pVhW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Womanizer_d863d84f-31f1-46fb-9ad5-f4565d05fa46.png",
+            "title": "",
+            "text": "",
+            "link_label": "Womanizer",
+            "link": "shopify:\/\/collections\/womanizer"
+          }
+        },
+        "column_Dxyxxe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Woodrocket.png",
+            "title": "",
+            "text": "",
+            "link_label": "Wood Rocket",
+            "link": "shopify:\/\/collections\/wood-rocket"
+          }
+        },
+        "column_8riFyj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/XOXTOYS_f62e1262-d2da-4b5c-a652-914c576fb6d8.png",
+            "title": "",
+            "text": "",
+            "link_label": "XOXTOYS",
+            "link": "shopify:\/\/collections\/xoxtoys"
+          }
+        },
+        "column_kqxYRE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-xr-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "XR Brands",
+            "link": "shopify:\/\/collections\/xr-brands"
+          }
+        },
+        "column_4CdHh9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/YES_3d498b50-b921-41f6-b40d-a7666334f9a2.png",
+            "title": "",
+            "text": "",
+            "link_label": "YES",
+            "link": "shopify:\/\/collections\/yes"
+          }
+        },
+        "column_KFbXNP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Yoba_fda87a52-99fa-4a30-828f-a93d3524dd3f.png",
+            "title": "",
+            "text": "",
+            "link_label": "Yoba",
+            "link": "shopify:\/\/collections\/yoba"
+          }
+        },
+        "column_zzW8MK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-zerotolerance-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Zero Tolerance",
+            "link": "shopify:\/\/collections\/zero-tolerance"
+          }
+        },
+        "column_g4jUgX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Zeus_0618191e-cf09-4083-b21c-c77976116c70.png",
+            "title": "",
+            "text": "",
+            "link_label": "Zeus",
+            "link": "shopify:\/\/collections\/zeus"
+          }
+        },
+        "column_4bfWyg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-zuice-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Zuice",
+            "link": "shopify:\/\/collections\/zuice"
+          }
+        },
+        "column_AEpJFa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-clonewilly-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "CLONE-A-WILLY",
+            "link": "shopify:\/\/collections\/clone-a-willy"
+          }
+        },
+        "column_wjK9cX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-clonepussy-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "CLONE-A-PUSSY",
+            "link": "shopify:\/\/collections\/clone-a-pussy"
+          }
+        },
+        "column_X9WqLd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Zestra.png",
+            "title": "",
+            "text": "",
+            "link_label": "Zestra",
+            "link": "shopify:\/\/collections\/zestra"
+          }
+        },
+        "column_YYngnC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-ticklekitty-titlecard-bigger.png",
+            "title": "",
+            "text": "",
+            "link_label": "Tickle Kitty Press",
+            "link": "shopify:\/\/collections\/tickle-kitty-press"
+          }
+        }
+      },
+      "block_order": [
+        "column_hiTmi6",
+        "column_hm8B77",
+        "column_LL9Wq7",
+        "column_JpmE4B",
+        "column_B7xPNe",
+        "column_3jyxNT",
+        "column_WrPkiA",
+        "column_BJaLfN",
+        "column_JxCQ7R",
+        "column_cxYPJW",
+        "column_eWCP9p",
+        "column_JNUjCk",
+        "column_fwcG4F",
+        "column_9DzKqa",
+        "column_BmP8XT",
+        "column_NzrM46",
+        "column_QpF6Af",
+        "column_eEMbnF",
+        "column_7B97KM",
+        "column_3iaaeY",
+        "column_hFNWM4",
+        "column_VWTmxj",
+        "column_KLaMmw",
+        "column_8ztBgC",
+        "column_dWAzBg",
+        "column_ndin7d",
+        "column_RWPtM8",
+        "column_ryaRwN",
+        "column_exjez9",
+        "column_RARMYX",
+        "column_j78iUa",
+        "column_AKx44Y",
+        "column_8eDRNq",
+        "column_Q7ebz4",
+        "column_97pVhW",
+        "column_Dxyxxe",
+        "column_8riFyj",
+        "column_kqxYRE",
+        "column_4CdHh9",
+        "column_KFbXNP",
+        "column_zzW8MK",
+        "column_g4jUgX",
+        "column_4bfWyg",
+        "column_AEpJFa",
+        "column_wjK9cX",
+        "column_X9WqLd",
+        "column_YYngnC"
+      ],
+      "custom_css": [
+        ".multicolumn.background-primary .multicolumn-card {background: transparent;}",
+        ".multicolumn-card-spacing {margin: 0; padding: 0;}",
+        "li.multicolumn-list__item {padding: 0.5rem;}",
+        ".my-featured-title h2.title {background: #e8e1f2;}",
+        ".multicolumn-card__info .icon-wrap {display: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-a0443abe-8469-4fd9-a2cc-dc750c3fa914",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
+    }
+  },
+  "order": [
+    "main",
+    "brand_multicolumn_fqYAtb",
+    "brand_multicolumn_PxFgNh",
+    "brand_multicolumn_HV78dR",
+    "brand_multicolumn_eXphgL"
+  ]
+}

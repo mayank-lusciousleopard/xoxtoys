@@ -2,11 +2,191 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
+      "blocks": {
+        "collection_hxD4LP": {
+          "type": "collection",
+          "settings": {
+            "collection": "adult-games"
+          }
+        },
+        "collection_LRpHJi": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-sex-toys"
+          }
+        },
+        "collection_RAfyQg": {
+          "type": "collection",
+          "settings": {
+            "collection": "anal-beads-1"
+          }
+        },
+        "collection_TUgtwA": {
+          "type": "collection",
+          "settings": {
+            "collection": "anal-lube"
+          }
+        },
+        "collection_tk8ziK": {
+          "type": "collection",
+          "settings": {
+            "collection": "anal-sex-toys"
+          }
+        },
+        "collection_w3gjWp": {
+          "type": "collection",
+          "settings": {
+            "collection": "anal-vibrators"
+          }
+        },
+        "collection_FQqPkw": {
+          "type": "collection",
+          "settings": {
+            "collection": "batteries-chargers"
+          }
+        },
+        "collection_8yUgcM": {
+          "type": "collection",
+          "settings": {
+            "collection": "bdsm-toys"
+          }
+        },
+        "collection_fQ6DWT": {
+          "type": "collection",
+          "settings": {
+            "collection": "black-dildos"
+          }
+        },
+        "collection_zBwHhc": {
+          "type": "collection",
+          "settings": {
+            "collection": "blindfolds-masks-gags"
+          }
+        },
+        "collection_GbRmzA": {
+          "type": "collection",
+          "settings": {
+            "collection": "erotic-books"
+          }
+        },
+        "collection_m74xPq": {
+          "type": "collection",
+          "settings": {
+            "collection": "bullet-vibrators"
+          }
+        },
+        "collection_n3Jgwt": {
+          "type": "collection",
+          "settings": {
+            "collection": "butt-plugs"
+          }
+        },
+        "collection_zAfFMB": {
+          "type": "collection",
+          "settings": {
+            "collection": "classic-vibrators"
+          }
+        },
+        "collection_cymzLJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "clone-a-willy"
+          }
+        },
+        "collection_FtUnUb": {
+          "type": "collection",
+          "settings": {
+            "collection": "cock-rings"
+          }
+        },
+        "collection_cGhAin": {
+          "type": "collection",
+          "settings": {
+            "collection": "sex-toys-for-couples"
+          }
+        },
+        "collection_HJgGMW": {
+          "type": "collection",
+          "settings": {
+            "collection": "dildos"
+          }
+        },
+        "collection_HXPkNg": {
+          "type": "collection",
+          "settings": {
+            "collection": "double-ended-dildos"
+          }
+        },
+        "collection_EBNjgh": {
+          "type": "collection",
+          "settings": {
+            "collection": "douche-enema"
+          }
+        },
+        "collection_TxBDBz": {
+          "type": "collection",
+          "settings": {
+            "collection": "female-enhancement"
+          }
+        },
+        "collection_WMKbcJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "finger-vibrator"
+          }
+        },
+        "collection_QH3pEE": {
+          "type": "collection",
+          "settings": {
+            "collection": "flavoured-lube"
+          }
+        },
+        "collection_Twdx7C": {
+          "type": "collection",
+          "settings": {
+            "collection": "floggers-ticklers-whips-paddles"
+          }
+        },
+        "collection_eQ3eEB": {
+          "type": "collection",
+          "settings": {
+            "collection": "g-spot-vibrators"
+          }
+        }
+      },
+      "block_order": [
+        "collection_hxD4LP",
+        "collection_LRpHJi",
+        "collection_RAfyQg",
+        "collection_TUgtwA",
+        "collection_tk8ziK",
+        "collection_w3gjWp",
+        "collection_FQqPkw",
+        "collection_8yUgcM",
+        "collection_fQ6DWT",
+        "collection_zBwHhc",
+        "collection_GbRmzA",
+        "collection_m74xPq",
+        "collection_n3Jgwt",
+        "collection_zAfFMB",
+        "collection_cymzLJ",
+        "collection_FtUnUb",
+        "collection_cGhAin",
+        "collection_HJgGMW",
+        "collection_HXPkNg",
+        "collection_EBNjgh",
+        "collection_TxBDBz",
+        "collection_WMKbcJ",
+        "collection_QH3pEE",
+        "collection_Twdx7C",
+        "collection_eQ3eEB"
+      ],
       "settings": {
-        "title": "Collections",
+        "title": "All collections",
         "sort": "alphabetical",
+        "color_scheme": "scheme-a0443abe-8469-4fd9-a2cc-dc750c3fa914",
         "image_ratio": "square",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "columns_mobile": "2"
       }
     }

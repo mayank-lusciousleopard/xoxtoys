@@ -1,0 +1,86 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "image_banner_MrT9rJ": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_6ihWKq": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Mix & Match",
+            "heading_size": "h1"
+          }
+        },
+        "text_QEU474": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Les prix sont dégressifs.<br\/>Plus vous achetez, plus vous économisez !<\/p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_XprkwU": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Start Creating",
+            "button_link_1": "\/pages\/mix-match\/#shopify-section-template--15528716697678__1708242806a81d1730",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6ihWKq",
+        "text_QEU474",
+        "buttons_XprkwU"
+      ],
+      "custom_css": [
+        ".banner__buttons a.button.button--primary:after,.banner__buttons a.button.button--primary:before {display: none;}",
+        ".banner__buttons a.button.button--primary {border-radius: 10px; border: 2px solid #8e6abd; box-shadow: 2px 2px #8e6abd; background: #fff; color: #8e6abd;}",
+        ".banner__box.content-container {padding-bottom: 0;}",
+        ".banner__content.banner__content--bottom-center {padding-bottom: 3rem;}",
+        "@media screen and (max-width: 767px) {.banner__content {position: absolute; height: 100%; } .banner__content {align-items: flex-end !important; }}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "image": "shopify:\/\/shop_images\/mix_and_match_xox_desktop_6_1_1.png",
+        "mobile_image": "shopify:\/\/shop_images\/mix_match_xox_mobile_8_1_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-919eb1fe-4118-47a8-b692-316388bfa490",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "custom_liquid_QdxE6j": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"rbrBundleBuilder\"><\/div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_MrT9rJ",
+    "custom_liquid_QdxE6j"
+  ]
+}

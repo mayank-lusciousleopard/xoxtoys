@@ -2,15 +2,118 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "multicolumn_yKxMzh": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_MrekXx": {
+          "type": "column",
+          "settings": {
+            "title": "<p><a href=\"\/collections\/all-lubes\" title=\"All Lubes\"><strong>Lubes & Lotions<\/strong><\/a><\/p>",
+            "text": "<p><a href=\"\/collections\/all-lubes\" title=\"All Lubes\">Lubes<\/a><br\/><a href=\"\/collections\/massage-oil\" title=\"Massage Oil\">Massage Oils<\/a><br\/><a href=\"\/collections\/clitoral-stimulants\" title=\"Clitoral Stimulants\">Clitoral Stimulants<\/a><br\/><a href=\"\/collections\/toy-cleaner\" title=\"Toy Cleaner\">Toy Cleaners<\/a><br\/><a href=\"\/collections\/prolongers-desensitizers\" title=\"Prolongers & Desensitizers\">Prolongers & Desensitizers<\/a><br\/><a href=\"\/collections\/lubes-oil\" title=\"Lubes & Lotions\">All Lubes & Lotions<\/a><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_YTa7LC": {
+          "type": "column",
+          "settings": {
+            "title": "<p><a href=\"\/collections\/all-toys\" title=\"All Toys\"><strong>Toys<\/strong><\/a><\/p>",
+            "text": "<p><a href=\"\/collections\/all-dildos\" title=\"All Dildos\">Dildos<\/a><br\/><a href=\"\/collections\/all-vibrators\" title=\"All Vibrators\">Vibrators<\/a><br\/><a href=\"\/collections\/clitoral-stimulators\" title=\"Clitoral Stimulators\">Clitoral Stimulators<\/a><br\/><a href=\"\/collections\/vibrating-male-masturbators\" title=\"Vibrating Male Masturbators\">Masturbators<\/a><br\/><a href=\"\/collections\/anal-sex-toys\" title=\"Anal Sex Toys\">Anal Toys<\/a><br\/><a href=\"\/collections\/sex-dolls\" title=\"Sex Dolls\">Sex Dolls<\/a><br\/><a href=\"\/collections\/all-toys\" title=\"All Toys\">All Sex Toys<\/a><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_bgDVyA": {
+          "type": "column",
+          "settings": {
+            "title": "<p><a href=\"\/collections\/all-sexual-health\" title=\"All Sexual Health\"><strong>Sexual Health<\/strong><\/a><\/p>",
+            "text": "<p><a href=\"\/collections\/male-wellness\" title=\"Male Wellness\">Male Wellness<\/a><br\/><a href=\"\/collections\/female-wellness\" title=\"Female Wellness\">Female Wellness<\/a><br\/><a href=\"\/collections\/adult-games\" title=\"Adult Games\">Gifts, Gags & Games<\/a><br\/><a href=\"\/collections\/erotic-books\" title=\"Books\">Books<\/a><br\/><a href=\"\/collections\/condoms\" title=\"Condoms\">Condoms<\/a><br\/><a href=\"\/collections\/all-sexual-health\" title=\"All Sexual Health\">All Sexual Health<\/a><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rbzpyc": {
+          "type": "column",
+          "settings": {
+            "title": "<p><a href=\"\/collections\/all-bdsm\" title=\"All BDSM\"><strong>BDSM<\/strong><\/a><\/p>",
+            "text": "<p><a href=\"\/collections\/all-furniture\" title=\"All Furniture\">Furniture<\/a><br\/><a href=\"\/collections\/blindfolds-masks-gags\" title=\"Blindfolds, Masks, & Gags\">Wearables<\/a><br\/><a href=\"\/collections\/crops-paddles\" title=\"Crops & Paddles\">Handhelds<\/a><br\/><a href=\"\/collections\/cuffs-and-ties\" title=\"Cuffs\">Cuffs<\/a><br\/><a href=\"\/collections\/all-bdsm\" title=\"All BDSM\">ALL BDSM<\/a><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_MrekXx",
+        "column_YTa7LC",
+        "column_bgDVyA",
+        "column_rbzpyc"
+      ],
+      "custom_css": [
+        ".multicolumn.background-primary .multicolumn-card {background: transparent;}",
+        ".multicolumn-card__info p a {text-decoration: none;}",
+        ".multicolumn-card__info p a:hover {text-decoration: underline;}",
+        ".without_marquee.basic-multicolumn-section.multicolumn.color-accent-1 {background: #f5f2f9;}",
+        ".basic-multicolumn-section ul.multicolumn-list li.multicolumn-list__item .multicolumn-card .multicolumn-card__info h3.inline-richtext {padding: 0;}",
+        "@media screen and (max-width: 767px) {.multicolumn-card__info .rte {display: block !important; }}"
+      ],
+      "settings": {
+        "custom_class": "without_marquee",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "image_TnYELx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/xox-black_2_1_1_1.png",
+            "image_width": 200,
+            "alignment": "center",
+            "image_text": "<p>Join our community of delighted customers and explore our curated collection today.<\/p><p>We offer the best sex toys in Canada. Whether you’re a pro or a beginner bumbling through the world of sex toys, you’ll find everything here. Be it vibrators, lubes, sex swings, or adult books. <\/p><p>Shop away!<\/p>"
+          }
+        },
+        "link_list_GtGnjM": {
+          "type": "link_list",
+          "settings": {
+            "heading": "INFORMATION",
+            "menu": "footer-menu-new"
+          }
+        },
+        "text_4ikBnm": {
+          "type": "text",
+          "settings": {
+            "heading": "CONNECT WITH XOXTOYS",
+            "subtext": "<p><a href=\"\/pages\/contact-form\" title=\"\/pages\/contact-form\">Contact us<\/a><\/p><p>Email: <a href=\"mailto:info@xoxtoys.com\" title=\"mailto:info@xoxtoys.com\">info@xoxtoys.com<\/a><\/p><p>Ph. no.: <a href=\"tel:2368181353\" title=\"tel:2368181353\">+1-(236) 818-1353<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "image_TnYELx",
+        "link_list_GtGnjM",
+        "text_4ikBnm"
+      ],
       "settings": {
-        "color_scheme": "background-1",
-        "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "color_scheme": "scheme-14e3c8bd-f2f7-4514-ba8e-066ece9e9e94",
+        "extra_footer_content": "",
+        "newsletter_enable": false,
+        "newsletter_heading": "",
         "enable_follow_on_shop": true,
         "show_social": true,
-        "enable_country_selector": true,
+        "enable_country_selector": false,
         "enable_language_selector": true,
         "payment_enable": true,
         "show_policy": false,
@@ -21,6 +124,7 @@
     }
   },
   "order": [
+    "multicolumn_yKxMzh",
     "footer"
   ]
 }

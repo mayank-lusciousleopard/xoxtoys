@@ -1043,7 +1043,7 @@ a.product__text {
 }
 
 .thumbnail-list_item--variant:not(:first-child) {
-  display: none;
+  /* display: none; */
 }
 
 @media screen and (min-width: 990px) {
@@ -1582,6 +1582,12 @@ a.product__text {
 
 .recipient-form .error-message::first-letter {
   text-transform: capitalize;
+}
+.product-form__input input[type=radio]+label {
+    background: transparent;
+}
+.product__modal-opener:hover .product__media-icon {
+    background: transparent;
 }
 
 @media screen and (forced-colors: active) {
