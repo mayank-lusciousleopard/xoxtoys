@@ -1,0 +1,264 @@
+<style>
+    .freegift-addbutton.disable-btn {
+    pointer-events: none;
+    opacity: 0.5;
+}
+.free-gift-added {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0px;
+  border: 1px solid rgba(142,106,189,1);
+  background-color: rgb(244 238 252);
+  border-radius: 3px;
+  color: rgba(142,106,189,1);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+#freeGiftSelector {
+  text-align: center;
+  border: 1px solid lightgrey;
+  background: white;
+  border-radius: 7px;
+  padding: 7px;
+  margin: 10px 0px;
+}
+.freegift-Section-Title {
+  margin-bottom: 10px;
+  color: rgba(142,106,189,1) !important;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.product-free-gift {
+  max-width: 30%;
+  text-align: center;
+  display: inline-block;
+  margin-left: 2%;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+.free-gift-image {
+  height: 65px;
+}
+.product-free-gift p {
+  height: 20px;
+  font-size: 10px;
+}
+.free-gift-value-span {
+  margin-bottom: 10px;
+  display: block;
+  margin-top: 5px;
+}
+.freegift-addbutton {
+  color: #fff;
+  background-color: rgba(142,106,189,1);
+  padding: 6px 25px;
+  margin-top: 15px;
+  font-size: 0.9em;
+  border-radius: 15px;
+}
+  button.freegift-changebutton {
+    color: #fff;
+    background-color: rgba(142,106,189,1);
+    padding: 6px 25px;
+    font-size: 0.9em;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+</style>
+{% assign gift_added = 0 %}
+{% assign total_without_gift = checkout.line_items_subtotal_price %}
+{% for item in checkout.line_items %}
+  {% if item.variant.id == 40237389348942 or item.variant.id == 40237389578318 or item.variant.id == 40237389643854 %}
+    {% assign gift_added = 1 %}
+    {% assign gift_price = item.variant.price | times: item.quantity %}
+    {% assign total_without_gift = checkout.line_items_subtotal_price | minus: gift_price %}
+  {% endif %}
+{% endfor %}
+
+{% if gift_added > 0 and total_without_gift > 9999 %}
+  <div class="free-gift-added">
+    <p>Your Free Gift Has Been Added!</p>
+  </div>
+  {% assign gift_added_id = 0 %}
+{% for item in checkout.line_items %}
+  {% if item.variant.id == 40237389348942 %}
+    {% assign gift_added_id = 40237389348942 %}
+    {% assign gift_quantity = item.quantity %}
+  {% endif %}
+  {% if item.variant.id == 40237389578318 %}
+    {% assign gift_added_id = 40237389578318 %}
+    {% assign gift_quantity = item.quantity %}
+  {% endif %}
+  {% if item.variant.id == 40237389643854 %}
+    {% assign gift_added_id = 40237389643854 %}
+    {% assign gift_quantity = item.quantity %}
+  {% endif %}
+{% endfor %}
+  
+    <button type="button" id="{{ gift_added_id }}" name="add" value="Add gift" class="button freegift-changebutton">
+	      		<span class="add-to-cart-text">Change gift</span>
+	    	</button>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+  jQuery(document).ready(function(){
+    jQuery("button.freegift-changebutton").click(function(){
+      data = {
+        "id": this.id,
+        "quantity": 0
+      }
+      jQuery.ajax({
+      type: 'POST',
+      url: '/cart/change.js',
+      data: data,
+      dataType: 'json',
+      success: function() { 
+        window.location.replace("https://www.xoxtoys.ca/checkout");
+      }
+      });
+    });
+  });
+</script>
+  {% if gift_quantity > 1 %}
+<script>
+  jQuery(document).ready(function(){
+    var gift_added_id = {{gift_added_id}};
+      data = {
+        "id": gift_added_id,
+        "quantity": 1
+      }
+      jQuery.ajax({
+      type: 'POST',
+      url: '/cart/change.js',
+      data: data,
+      dataType: 'json',
+      success: function() { 
+        window.location.replace("https://www.xoxtoys.ca/checkout");
+      }
+      });
+  });
+</script>
+    {% endif %}
+{% endif %}
+
+{% if gift_added > 0 and total_without_gift < 9999 %}
+  {% assign gift_added_id = 0 %}
+{% for item in checkout.line_items %}
+  {% if item.variant.id == 40237389348942 %}
+    {% assign gift_added_id = 40237389348942 %}
+  {% endif %}
+  {% if item.variant.id == 40237389578318 %}
+    {% assign gift_added_id = 40237389578318 %}
+  {% endif %}
+  {% if item.variant.id == 40237389643854 %}
+    {% assign gift_added_id = 40237389643854 %}
+  {% endif %}
+{% endfor %}
+  <p style="margin-bottom: 2rem;color:red;">Free Gift items are only eligible for orders with a value of $100 or more</p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+  jQuery(document).ready(function(){
+    setTimeout(function(){ 
+    var gift_added_id = {{gift_added_id}};
+      data = {
+        "id": gift_added_id,
+        "quantity": 0
+      }
+      jQuery.ajax({
+      type: 'POST',
+      url: '/cart/change.js',
+      data: data,
+      dataType: 'json',
+      success: function() { 
+        window.location.replace("https://www.xoxtoys.ca/checkout");
+      }
+      });
+      }, 3000);
+  });
+</script>
+{% endif %}
+
+{% if gift_added == 0 and checkout.line_items_subtotal_price > 9999 %}
+<div id="freeGiftSelector" style="text-align: center;">      
+  <h2 class="freegift-Section-Title">Select a free gift</h2>
+
+  <div class="product-free-gift">
+	<div>
+		<img src="//cdn.shopify.com/s/files/1/2468/8679/files/gwp-lube-icon_180x.png?v=1685772355" class="free-gift-image">
+      <p>
+        <span class="free-gift-title">Water Based Lube</span>
+<!--         <span class="free-gift-value-span">
+          <span class="free-gift-value"> (<span class="free-gift-price">$6.99 Value</span>)</span>
+        </span> -->
+      </p>
+	</div>
+    <div>
+ 		<div class="product-single__add-to-cart">
+	    	<button type="button" id="40237389348942" name="add" value="Add gift" class="add-to-cart button lace-product-addToCard-mobile freegift-addbutton">
+	      		<span class="add-to-cart-text">Add gift</span>
+	    	</button>
+    	</div>
+	</div>
+  </div>
+  <div class="product-free-gift">
+	<div>
+		<img src="//cdn.shopify.com/s/files/1/2468/8679/files/gwp-bullet-icon_180x.png?v=1685772990" class="free-gift-image">
+      <p>
+        <span class="free-gift-title">Bullet Vibe</span>
+<!--         <span class="free-gift-value-span">
+          <span class="free-gift-value"> (<span class="free-gift-price">$7.99 Value</span>)</span>
+        </span> -->
+      </p>
+	</div>
+    <div>
+ 		<div class="product-single__add-to-cart">
+	    	<button type="button" id="40237389578318" name="add" value="Add gift" class="add-to-cart button lace-product-addToCard-mobile freegift-addbutton">
+	      		<span class="add-to-cart-text">Add gift</span>
+	    	</button>
+    	</div>
+	</div>
+  </div>
+  <div class="product-free-gift">
+	<div>
+		<img src="//cdn.shopify.com/s/files/1/2468/8679/files/gwp-mystery-icon_180x.png?v=1685577323" class="free-gift-image">
+      <p>
+        <span class="free-gift-title">Surprise Me</span>
+<!--         <span class="free-gift-value-span">
+          <span class="free-gift-value"> (<span class="free-gift-price">$9.99 Value</span>)</span>
+        </span> -->
+      </p>
+	</div>
+    <div>
+ 		<div class="product-single__add-to-cart">
+	    	<button type="button" id="40237389643854" name="add" value="Add gift" class="add-to-cart button lace-product-addToCard-mobile freegift-addbutton">
+	      		<span class="add-to-cart-text">Add gift</span>
+	    	</button>
+    	</div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+  jQuery(document).ready(function(){
+    jQuery("button.freegift-addbutton").click(function(){
+      jQuery("button.freegift-addbutton").addClass("disable-btn");
+      data = {
+        "id": this.id,
+        "quantity": 1
+      }
+      jQuery.ajax({
+      type: 'POST',
+      url: '/cart/add.js',
+      data: data,
+      dataType: 'json',
+      success: function() { 
+        window.location.replace("https://www.xoxtoys.ca/checkout");
+      }
+      });
+    });
+  });
+</script>
+{% endif %}

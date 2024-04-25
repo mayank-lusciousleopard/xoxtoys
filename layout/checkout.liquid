@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="{{ direction }}" class="{{ checkout_html_classes }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, user-scalable=0">
+    <meta name="referrer" content="origin">
+
+    <title>{{ page_title }}</title>
+
+    {{ content_for_header }}
+
+    {{ checkout_stylesheets }}
+    {{ checkout_scripts }}
+  </head>
+  <body>
+    {{ skip_to_content_link }}
+<div class="header-sec-container">
+    <header class="banner checkout_header wrap" data-header role="banner">
+      <div class="checkout_logo">
+        {%- if settings.logo != blank -%}
+              <a href="{{ shop.url }}" class="header__heading-logo-wrapper">
+                <img src="{{ settings.logo | img_url: '150x150' }}" />
+              </a>
+            {%- else -%}
+          <a href="{{ shop.url }}" class="header__heading-logo-wrapper">
+        {{ content_for_logo }}
+          </a>
+        {% endif %}
+      </div>
+      <div class="checkout_cart_url">
+        <a href="{{ shop.url }}/#cart-icon-bubble" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+        {%- liquid
+          if cart == empty
+            render 'icon-cart-empty'
+          else
+            render 'icon-cart'
+          endif
+        -%}
+        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+        {%- if cart != empty -%}
+          <div class="cart-count-bubble">
+            {%- if cart.item_count < 100 -%}
+              <span aria-hidden="true">{{ cart.item_count }}</span>
+            {%- endif -%}
+            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+          </div>
+        {%- endif -%}
+      </a>
+      </div>
+    </header>
+  </div>
+
+    {{ order_summary_toggle }}
+    <div class="content" data-content>
+      <div class="wrap">
+        <div class="main">
+          <header class="main__header" role="banner">
+            {{ content_for_logo }}
+            {{ breadcrumb }}
+            {{ alternative_payment_methods }}
+          </header>
+          <main class="main__content" role="main">
+            {{ content_for_layout }}
+          </main>
+          <footer class="main__footer" role="contentinfo">
+            {{ content_for_footer }}
+          </footer>
+        </div>
+        <aside class="sidebar" role="complementary">
+          <div class="sidebar__header">
+            {{ content_for_logo }}
+          </div>
+          <div class="sidebar__content">
+            {% render 'checkout-gift' %}
+            {{ content_for_order_summary }}
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    {{ tracking_code }}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("input#checkout_email").change(function(){
+    //alert("The text has been changed.");
+    var getEmail = $(this).val();
+    if(getEmail.includes("sachio")){
+      //alert(getEmail);
+      window.location.replace("https://www.xoxtoys.ca/");
+    }
+  });
+  $("input#checkout_email").keyup(function(){
+    //alert("The text has been changed.");
+    var getEmail = $(this).val();
+    if(getEmail.includes("sachio")){
+      //alert(getEmail);
+      window.location.replace("https://www.xoxtoys.ca/");
+    }
+  });
+  $("input#checkout_shipping_address_last_name").keyup(function(){
+    //alert("The text has been changed.");
+    var getLName = $(this).val();
+    if(getLName.includes("YT")){
+      //alert(getLName);
+      window.location.replace("https://www.xoxtoys.ca/");
+    }
+  });
+});
+</script>
+<style>
+  header.checkout_header::before, header.checkout_header::after {
+    display: none;
+  }
+  header.checkout_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .checkout_logo img {
+    width: 150px;
+}
+  .header-sec-container {
+    background: #fff;
+    box-shadow: 0 2px 5px #00000024;
+    z-index: 3;
+}
+  /* aside.sidebar, .main, body>.content {
+    background: #F5F2F9;
+} */
+  button.btn {
+    padding: .8rem 2rem;
+    border-radius: 100px;
+    line-height: 1;
+}
+  a.logo.logo--left span.logo__text.heading-1 {
+    display: none;
+}
+@media screen and (min-width:768px){
+  header.banner.checkout_header.wrap {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  #freeGiftSelector {
+    margin-bottom: 1rem;
+}
+}
+@media screen and (max-width:767px){
+  header.banner.checkout_header.wrap {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+</style>
+  </body>
+</html>
