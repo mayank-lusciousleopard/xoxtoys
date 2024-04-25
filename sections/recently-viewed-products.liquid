@@ -1,0 +1,202 @@
+<div class="recently-viewed-products-section page-width color-{{ section.settings.color_scheme }}">
+  <div class="my-featured-title page-width">
+<h2 class="heading title center">{{ section.settings.title }}</h2>
+  </div>
+<div class="swiper swiperRecent page-width">
+  <div class="swiper-wrapper" id="your-container-id"></div>
+   <div class="swiper-button-prev"><svg class="my-slick-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg></div>
+       <div class="swiper-button-next"><svg class="my-slick-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg></div>
+</div>
+</div>
+<style>
+  .swiper-backface-hidden .swiper-slide {
+    padding: 1rem;
+}
+  .swiper-backface-hidden .swiper-slide a.full-unstyled-link div:nth-child(2) {
+    height: 50px;
+}
+  .my-featured-title h2.heading.center {
+    background: #fff;
+    width: max-content;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 3rem;
+}
+  .recently-viewed-products-section form button.quick-add__submit {
+    border: 0;
+    margin-top: 1rem;
+    border-radius: 100px;
+    font-size: 12px;
+    position: relative;
+    z-index: 2;
+    background: #8e6abd;
+    color: #fff;
+}
+  .recently-viewed-products-section form button.quick-add__submit:before, .recently-viewed-products-section form button.quick-add__submit:after{
+    display:none;
+  }
+  .recently-viewed-products-section form button.quick-add__submit:hover {
+    box-shadow: none;
+}
+</style>
+<script>
+
+    function recentlySwiperSlider(){
+    const swiper = new Swiper('.swiperRecent', {
+      // Optional parameters
+      direction: 'horizontal',
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      loop: true,
+        slidesPerView: 2,
+        spaceBetween: 0,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 620px
+          620: {
+            slidesPerView: 4,
+            spaceBetween: 0
+          },
+        }
+    });
+  }
+  
+document.addEventListener("DOMContentLoaded", function() {
+  var productVarId = {{product.selected_or_first_available_variant.id}};
+  if ((productVarId == "40237389348942") || (productVarId == "40237389578318") || (productVarId == "40237389643854")){
+  }
+  else{
+    var productId = {{ product.id }};
+    var productName = `{{ product.title }}`;
+    var productImage = '{{ product.featured_image | img_url: 'master' }}';
+    var productPrice = '{{ product.price | money | remove_first: '' }}';
+    var productLink = '{{ product.url }}';
+    var productVarId = {{product.selected_or_first_available_variant.id}};
+  }
+
+
+    if (!productId || !productName || !productImage || !productLink || !productPrice || !productVarId) {
+        console.error('Product data is missing');
+        return;
+    }
+
+    var viewedProducts = JSON.parse(localStorage.getItem('viewedProducts')) || [];
+
+    viewedProducts = viewedProducts.filter(function(product) {
+        return product.id !== productId;
+    });
+
+    viewedProducts.unshift({ id: productId, name: productName, image: productImage, link: productLink, varId: productVarId, price: productPrice});
+
+    localStorage.setItem('viewedProducts', JSON.stringify(viewedProducts));
+
+    displayViewedProducts(viewedProducts.slice(1));
+});
+
+function displayViewedProducts(products) {
+    var container = document.getElementById('your-container-id'); // replace 'your-container-id' with your actual container ID
+    if (!container) {
+        console.error('Container element not found');
+        return;
+    }
+
+    container.innerHTML = ''; // Clear any existing content
+
+    let uniqueProducts = products.filter((product, index, self) =>
+        index === self.findIndex((p) => (
+            p.id === product.id
+        ))
+    );
+
+    if (uniqueProducts.length === 0) {
+       $(".heading").css("display", "none");
+    }
+
+    uniqueProducts.forEach(function(product,) {
+        var productElement = document.createElement('div');
+        productElement.className = 'swiper-slide'; 
+        productElement.innerHTML = `
+
+
+        
+        <div>
+          <a href="${product.link}" class="full-unstyled-link">
+            <div><img width="100%" src="${product.image}"/></div>
+            <div class="pro-title">${product.name}</div>
+            <div>${product.price}</div>
+          </a>
+              <div>
+                        <form method="post" action="/cart/add" id="quick-add-template--16294453870788__product-grid7280926064836" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form"><input type="hidden" name="form_type" value="product"><input type="hidden" name="utf8" value="✓"><input type="hidden" name="id" value="${product.varId}" class="product-variant-id">
+                        <button id="quick-add-template--16294453870788__product-grid7280926064836-submit" type="submit" name="add" class="quick-add__submit button button--full-width button--secondary" aria-haspopup="dialog" aria-labelledby="quick-add-template--16294453870788__product-grid7280926064836-submit title-template--16294453870788__product-grid-7280926064836" aria-live="polite" data-sold-out-message="true">
+                          <span>{{ 'products.product.add_to_cart' | t }} 
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          <path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M3 6H21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></span>
+      
+      <link href="//sayantan-template.myshopify.com/cdn/shop/t/24/assets/component-loading-spinner.css?v=116724955567955766481703241921" rel="stylesheet" type="text/css" media="all">
+      
+      <div class="loading__spinner hidden">
+        <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+        </svg>
+      </div>
+      </button><input type="hidden" name="product-id" value="${product.varId}"><input type="hidden" name="section-id" value="template--16294453870788__product-grid"></form>
+                
+          </div>
+        </div>
+        `;
+        container.appendChild(productElement);
+    });
+}
+
+// Fetch and display previously viewed products on page load, after removing duplicates
+document.addEventListener("DOMContentLoaded", function() {
+    var viewedProducts = JSON.parse(localStorage.getItem('viewedProducts')) || [];
+    displayViewedProducts(viewedProducts.slice(1));
+    recentlySwiperSlider();
+});
+
+</script>
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Recently Viewed",
+    "class":"section main-recently",
+    "settings": [
+      {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info",
+      "default": "background-1"
+    },
+      {
+      "type": "text",
+      "id": "title",
+      "label": "Section Heading"
+      }
+    ],
+    "presets": [
+    {
+      "name": "Recently Viewed",
+      "settings": {
+        }
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
